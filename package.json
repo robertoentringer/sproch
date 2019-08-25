@@ -27,5 +27,18 @@
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "description": "sproch-vue-cli",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertoentringer/sproch-vue-cli.git"
+  },
+  "keywords": [],
+  "author": "Roberto Entringer <r.entringer@gmail.com> (https://robertoentringer/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertoentringer/sproch-vue-cli/issues"
+  },
+  "homepage": "https://github.com/robertoentringer/sproch-vue-cli#readme"
 }
