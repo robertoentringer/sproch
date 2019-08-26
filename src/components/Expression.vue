@@ -69,17 +69,14 @@ export default {
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
-  p {
-    text-align: justify;
+}
+@media only screen and (max-width: 768px) {
+  .expression,
+  .expression:nth-child(even) {
+    flex-direction: column;
   }
-  @media only screen and (max-width: 768px) {
-    .expression,
-    .expression:nth-child(even) {
-      flex-direction: column;
-    }
-    .expression .block:first-of-type {
-      max-width: inherit;
-    }
+  .expression .block:first-of-type {
+    max-width: inherit;
   }
 }
 </style>
