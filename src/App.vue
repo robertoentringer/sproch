@@ -15,16 +15,15 @@ export default {
 }
 </script>
 
+<style src="normalize.css" />
 <style lang="scss">
 body {
   background: #333;
-}
-#app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: calc(1em + 1vw);
 }
 </style>
