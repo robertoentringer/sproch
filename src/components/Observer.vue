@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     callback(entries) {
-      this.$emit(entries[0].isIntersecting ? "intersect-enter" : "intersect-leave", [entries[0]])
+      if (entries[0].isIntersecting) this.$emit("enter")
     }
   }
 }

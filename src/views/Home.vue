@@ -1,12 +1,12 @@
 <template>
   <main class="home">
     <Expression v-for="(expression, i) in expressions" :key="i" :expression="expression" />
-    <Observer v-if="observerVisible" @intersect-enter="intersectEnter" />
+    <Observer v-if="observerVisible" @enter="intersectEnter" />
   </main>
 </template>
 
 <script>
-import expressions from "../data/expressions"
+import expressions from "@/data/expressions"
 import Expression from "@/components/Expression"
 import Observer from "@/components/Observer"
 
