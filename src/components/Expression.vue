@@ -1,0 +1,85 @@
+<template>
+  <article class="expression">
+    <div class="block">
+      <img v-if="expression.img" width="320" height="240" loading="lazy" :alt="expression.img" :src="img" />
+      <audio v-if="expression.audio" preload="none" controls :src="audio" />
+    </div>
+    <div class="block">
+      <h1 class="title">{{ expression.title }}</h1>
+      <div v-for="traduction in expression.i18n" :key="traduction.lang">
+        <h3 class="title">{{ traduction.lang.toUpperCase() }} - {{ traduction.title }}</h3>
+        <p>{{ traduction.describe }}</p>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script>
+export default {
+  name: "Expression",
+  props: {
+    expression: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    audio() {
+      return require(`audio/${this.expression.audio}`)
+    },
+    img() {
+      return require(`img/${this.expression.img}`)
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.expression {
+  display: flex;
+  margin: 2.5vw;
+  .block {
+    flex: 1;
+    & img + audio {
+      margin-top: 1rem;
+    }
+    &:first-of-type {
+      background-color: #e91e63;
+      padding: 1rem;
+      flex-direction: column;
+      line-height: 0;
+      max-width: 30%;
+    }
+    &:first-of-type img {
+      width: 100%;
+      height: auto;
+    }
+    &:first-of-type audio {
+      display: flex;
+      width: 100%;
+    }
+    &:last-of-type {
+      background-color: #ffc107;
+      padding: 1.5rem;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  p {
+    text-align: justify;
+  }
+  @media only screen and (max-width: 768px) {
+    .expression,
+    .expression:nth-child(even) {
+      flex-direction: column;
+    }
+    .expression .block:first-of-type {
+      max-width: inherit;
+    }
+  }
+}
+</style>
