@@ -1,9 +1,7 @@
 <template>
   <main class="home">
     <Expression v-for="(expression, i) in expressions" :key="i" :expression="expression" />
-    <Observer v-if="loadMore" @enter="handleEnter">
-      <h2>Loading...</h2>
-    </Observer>
+    <Observer v-if="observerVisible" @intersect-enter="intersectEnter" />
   </main>
 </template>
 
@@ -19,18 +17,17 @@ export default {
     Observer
   },
   methods: {
-    handleEnter() {
-      if (this.loadMore) this.expressions.push(expressions[this.expressions.length])
+    intersectEnter() {
+      if (this.observerVisible) this.expressions.push(expressions[this.expressions.length])
     }
   },
   computed: {
-    loadMore() {
+    observerVisible() {
       return this.expressions.length < expressions.length
     }
   },
   data() {
     return {
-      observerVisible: true,
       expressions: [expressions[0]]
     }
   }
