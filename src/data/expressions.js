@@ -227,7 +227,7 @@ export default [
   {
     audio: "10-keiseker.mp3",
     img: "10-keiseker-hdpi.jpg",
-    title: "Keiseker",
+    title: "Kéiseker",
     i18n: [
       { lang: "fr", title: "Hérisson", describe: "Petit animal qu'on rencontre souvent dans les jardins." },
       { lang: "de", title: "Igel", describe: "Kleines Tier welches oft in Gärten anzutreffen ist." },
@@ -574,7 +574,7 @@ export default [
   {
     audio: "46-dabo-eefalt.mp3",
     img: "2018-46-hdpi.jpg",
-    title: "Schéck en Dabo an de Bësch, da kriss de en Eefalt erem",
+    title: "Schéck en Dabo an de Bësch, da kriss de en Eefalt erëm",
     i18n: [
       {
         lang: "fr",
@@ -648,7 +648,7 @@ export default [
   {
     audio: "",
     img: "2018-43-hdpi.jpg",
-    title: "Kaffisdesch",
+    title: "Kaffisdësch",
     i18n: [
       {
         lang: "fr",
@@ -772,7 +772,7 @@ export default [
   {
     audio: "",
     img: "2018_30_Mescht-hdpi.jpg",
-    title: "Wann den Dreck Mescht gëtt, da wier e gär gefouert",
+    title: "Wann den Dreck Mëscht gëtt, da wier e gär gefouert",
     i18n: [
       {
         lang: "fr",
@@ -797,7 +797,7 @@ export default [
   {
     audio: "36-fouerfesch.mp3",
     img: "2018_35_Fouerfesch-hdpi.jpg",
-    title: "Fouerfesch",
+    title: "Fouerfësch",
     i18n: [
       {
         lang: "fr",
@@ -1256,7 +1256,7 @@ export default [
   {
     audio: "13-addi.mp3",
     img: "2018_12-hdpi.jpg",
-    title: "Äddi a Merci W",
+    title: "Äddi a Merci",
     i18n: [
       {
         lang: "fr",
@@ -1400,7 +1400,7 @@ export default [
   {
     audio: "07-leiw.mp3",
     img: "",
-    title: "leiw",
+    title: "Ech hunn dech léif",
     i18n: [
       {
         lang: "fr",
@@ -1447,7 +1447,7 @@ export default [
   {
     audio: "50-uucht.mp3",
     img: "2018_05-hdpi.jpg",
-    title: "Uucht W",
+    title: "Uucht",
     i18n: [
       {
         lang: "fr",
@@ -1497,7 +1497,7 @@ export default [
   {
     audio: "03-kregeilen.mp3",
     img: "2018_03-hdpi.jpg",
-    title: "Kregeilen",
+    title: "Kregéilen",
     i18n: [
       {
         lang: "fr",
@@ -1644,7 +1644,7 @@ export default [
   {
     audio: "47-well-besch-audio.mp3",
     img: "2017_47-hdpi.jpg",
-    title: "Déi Well lafen am Bësch",
+    title: "Déi Wëll lafen am Bësch",
     i18n: [
       {
         lang: "fr",
@@ -1694,7 +1694,7 @@ export default [
   {
     audio: "46-naischt.mp3",
     img: "46-naischtnotz-hdpi.jpg",
-    title: "Du hues den Näischtnotz am Gesiicht stoen.",
+    title: "Du hues den Näischtnotz am Gesiicht stoen",
     i18n: [
       {
         lang: "fr",
@@ -1717,7 +1717,7 @@ export default [
   {
     audio: "44-spein.mp3",
     img: "44_2017-hdpi.jpg",
-    title: "Beim Huwwele fale Spein.",
+    title: "Beim Huwwele fale Spéin",
     i18n: [
       {
         lang: "fr",
@@ -1768,7 +1768,7 @@ export default [
   {
     audio: "42-suedel.mp3",
     img: "42_2017-hdpi.jpg",
-    title: "Dat passt wéi der Kou de Suedel.",
+    title: "Dat passt wéi der Kou de Suedel",
     i18n: [
       {
         lang: "fr",
@@ -1841,7 +1841,7 @@ export default [
   {
     audio: "39-genz.mp3",
     img: "39_2017-hdpi.jpg",
-    title: "An de Genz setzen",
+    title: "An de Gënz setzen",
     i18n: [
       {
         lang: "fr",
@@ -1866,7 +1866,7 @@ export default [
   {
     audio: "36-maissat.mp3",
     img: "37_2017-hdpi.jpg",
-    title: "Wann d'Mais sat sinn, ass d'Miel batter.",
+    title: "Wann d'Mais sat sinn, ass d'Miel batter",
     i18n: [
       {
         lang: "fr",
@@ -1890,7 +1890,7 @@ export default [
   {
     audio: "36-spaicherliicht.mp3",
     img: "36_2017-hdpi.jpg",
-    title: "Mir geet eng Späicherlicht op.",
+    title: "Mir geet eng Späicherlicht op",
     i18n: [
       {
         lang: "fr",
@@ -1938,7 +1938,7 @@ export default [
   {
     audio: "34-weech.mp3",
     img: "34_2017-hdpi.jpg",
-    title: "Et ass mir weech.",
+    title: "Et ass mir weech",
     i18n: [
       {
         lang: "fr",
@@ -1988,7 +1988,7 @@ export default [
   {
     audio: "31-kapp.mp3",
     img: "31_2017-hdpi.jpg",
-    title: "Wat een net am Kapp huet, muss een an de Been hunn.",
+    title: "Wat een net am Kapp huet, muss een an de Been hunn",
     i18n: [
       {
         lang: "fr",
@@ -2013,7 +2013,7 @@ export default [
   {
     audio: "30-lammes.mp3",
     img: "30_2017-hdpi.jpg",
-    title: "Vum Lammes gebass",
+    title: "Vum Lämmes gebass",
     i18n: [
       {
         lang: "fr",
@@ -2108,7 +2108,7 @@ export default [
     audio: "24-mammendag3.mp3",
     img: "11Mammendag-hdpi.jpg",
     title:
-      "Mama kuck däi Kand hei ston, Well et well dir Merci son, A ganz lues son ech dir: Mama ech si frou mat dir!",
+      "Mama kuck däi Kand hei ston, Well et wëll dir Merci son, A ganz lues son ech dir: Mama ech si frou mat dir!",
     i18n: [
       { lang: "fr", title: "Maman, voilà ton enfant ici", describe: "venu pour te dire merci." },
       { lang: "de", title: "Mama, sieh dein Kind hier stehn,", describe: "um zu sagen Dankeschön." },
@@ -2193,7 +2193,7 @@ export default [
   {
     audio: "20-moien.mp3",
     img: "20moien-hdpi.jpg",
-    title: "Moien/Addi",
+    title: "Moien / Äddi",
     i18n: [
       {
         lang: "fr",
@@ -2267,7 +2267,7 @@ export default [
   {
     audio: "17-Kanoun.mp3",
     img: "17kanoun-hdpi.jpg",
-    title: "Ennert aller Kanoun!",
+    title: "Ënnert aller Kanoun!",
     i18n: [
       {
         lang: "fr",
@@ -2315,7 +2315,7 @@ export default [
   {
     audio: "29-bauer.mp3",
     img: "bauer-hdpi.jpg",
-    title: "Wat de Bauer net kennt, dat fresst en net.",
+    title: "Wat de Bauer net kennt, dat frësst en net",
     i18n: [
       {
         lang: "fr",
@@ -2365,7 +2365,7 @@ export default [
   {
     audio: "13-deiwell.mp3",
     img: "deiwell-hdpi.jpg",
-    title: "Dei Well lafen am Besch",
+    title: "Déi Wëll lafen am Bësch",
     i18n: [
       {
         lang: "fr",
@@ -2391,7 +2391,7 @@ export default [
   {
     audio: "10-fauscht-op-a.mp3",
     img: "fauschta-hdpi.jpg",
-    title: "Dat passt wei d'Fauscht op d'A",
+    title: "Dat passt wéi d'Fauscht op d'A",
     i18n: [
       {
         lang: "fr",
@@ -2417,7 +2417,7 @@ export default [
   {
     audio: "08-wat-een-net-am-kapp-huet.mp3",
     img: "amkapphunn-hdpi.jpg",
-    title: "Wat een net am Kapp huet, muss een an de Been hunn.",
+    title: "Wat een net am Kapp huet, muss een an de Been hunn",
     i18n: [
       {
         lang: "fr",
@@ -2467,7 +2467,7 @@ export default [
   {
     audio: "06-emgekeiert.mp3",
     img: "emgekeiert-hdpi.jpg",
-    title: "Emgekéiert ass och gefuer",
+    title: "Ëmgekéiert ass och gefuer",
     i18n: [
       {
         lang: "fr",
@@ -2542,7 +2542,7 @@ export default [
   {
     audio: "02-deierchen.mp3",
     img: "02-deierchen-mdpi.jpg",
-    title: "All Déierche sãi Pleséierchen",
+    title: "All Déierche säi Pleséierchen",
     i18n: [
       {
         lang: "fr",
@@ -2592,7 +2592,7 @@ export default [
   {
     audio: "51-chreschtdag.mp3",
     img: "51-Chreschtdag-mdpi.jpg",
-    title: "Chreschtdag",
+    title: "Chrëschtdag",
     i18n: [
       {
         lang: "fr",
@@ -2642,7 +2642,7 @@ export default [
   {
     audio: "45-af-mecht-der-100.mp3",
     img: "Plakegen-an-d_Taesch-graeifen-mdpi.jpg",
-    title: "Engem Plakegen an d'Tagch graifen",
+    title: "Engem Plakegen an d'Täsch gräifen",
     i18n: [
       {
         lang: "fr",
@@ -2767,7 +2767,7 @@ export default [
   {
     audio: "37-batti.mp3",
     img: "KW37-mdpi.jpg",
-    title: "Hienshatt stellt sech de Batti",
+    title: "Hien / hatt stellt sech de Batti",
     i18n: [
       {
         lang: "fr",
@@ -2892,7 +2892,7 @@ export default [
   {
     audio: "28-heppen.mp3",
     img: "KW28-mdpi.jpg",
-    title: "Mir ginn een heppen, geey de mat?",
+    title: "Mir ginn een hëppen, gees de mat?",
     i18n: [
       {
         lang: "fr",
@@ -2917,7 +2917,7 @@ export default [
   {
     audio: "27-betschel.mp3",
     img: "KW27-mdpi.jpg",
-    title: "Lo ass d'Betychel awer fett!",
+    title: "Lo ass d'Bëtschel awer fett!",
     i18n: [
       {
         lang: "fr",
@@ -2939,7 +2939,7 @@ export default [
   {
     audio: "25-groussherzogsgebuertsdag.mp3",
     img: "KW25-mdpi.jpg",
-    title: "Grousherzogr gebuertydag",
+    title: "Groussherzogsgebuertsdag",
     i18n: [
       {
         lang: "fr",
@@ -2961,7 +2961,8 @@ export default [
   {
     audio: "24-mammendag3.mp3",
     img: "24-mammendag-mdpi.jpg",
-    title: "Mamakuck dai Kand hei ston Wel et well dir Merci on A gang luer son ech dir Mama ech si frow mat dir!",
+    title:
+      "Mama kuck däi Kand hei ston, Well et wëll dir Merci son. A ganz luez son ech dir. Mama ech si frou mat dir!",
     i18n: [
       {
         lang: "fr",
@@ -3010,7 +3011,7 @@ export default [
   {
     audio: "15-apelduuscht.mp3",
     img: "KW15-Apel-Duuscht-mdpi.jpg",
-    title: "EnN Apel fir den Duuscht",
+    title: "En Apel fir den Duuscht",
     i18n: [
       {
         lang: "fr",
@@ -3058,7 +3059,7 @@ export default [
   {
     audio: "01-Virsaz.mp3",
     img: "01-Virsaz-mdpi.jpg",
-    title: "Virsacy",
+    title: "Virsaz",
     i18n: [
       {
         lang: "fr",
@@ -3083,7 +3084,7 @@ export default [
   {
     audio: "51-chreschtdag.mp3",
     img: "51-Chreschtdag-mdpi.jpg",
-    title: "Chreschtdag",
+    title: "Chrëschtdag",
     i18n: [
       {
         lang: "fr",
@@ -3134,7 +3135,7 @@ export default [
     audio: "40-pappendag.mp3",
     img: "40-pappendag-mdpi.jpg",
     title:
-      "Léówe Papa kuck dir uns Wat echv dir gebastelt hunn Beck dech, komm, du kriss vu mir, Ee gany décke Kuss op dstr",
+      "Léiwe Papa kuck dir uns Wat ech dir gebastelt hunn Béck dech, komm, du kriss vu mir, Ee ganz décke Kuss op d'Stir",
     i18n: [
       {
         lang: "fr",
@@ -3209,7 +3210,7 @@ export default [
   {
     audio: "33-gehaansfenkelchen.mp3",
     img: "33-gehaansfenkelchen-mdpi.jpg",
-    title: "Gehaansfenkelchen",
+    title: "Gehaansfénkelchen",
     i18n: [
       {
         lang: "fr",
@@ -3234,7 +3235,7 @@ export default [
   {
     audio: "32-heibleifskaerchen.mp3",
     img: "32-heibleifskaerchen-mdpi.jpg",
-    title: "Mir fuere mat der Heidleifkaerchen",
+    title: "Mir fuere mat der Heibleifskäerchen",
     i18n: [
       {
         lang: "fr",
@@ -3258,7 +3259,7 @@ export default [
   {
     audio: "29-summervakanz.mp3",
     img: "29-summervakanz-mdpi.jpg",
-    title: "Summervakang!",
+    title: "Summervakanz!",
     i18n: [
       {
         lang: "fr",
@@ -3283,7 +3284,7 @@ export default [
   {
     audio: "26-fraiheetssonn.mp3",
     img: "26-fraiheetssonn-mdpi.jpg",
-    title: "Loos viru blinken &Fräiheetssonn",
+    title: "Loos viru blénken d'Fräiheetssonn",
     i18n: [
       {
         lang: "fr",
@@ -3308,7 +3309,7 @@ export default [
   {
     audio: "24-mammendag3.mp3",
     img: "24-mammendag-mdpi.jpg",
-    title: "Mamakuck dai Kand hei ston Wel et well dir Merci on A gang luer son ech dir Mama ech si frow mat dir!",
+    title: "Mama kuck däi Kand hei ston, Wel et wëll dir Merci son. A ganz luez son ech dir: Mama ech si frou mat dir!",
     i18n: [
       {
         lang: "fr",
@@ -3333,7 +3334,7 @@ export default [
   {
     audio: "23-himmelsdeierchen.mp3",
     img: "23-himmelsdeierechen-mdpi.jpg",
-    title: "Himmelsdieienchen",
+    title: "Himmelsdéierchen",
     i18n: [
       {
         lang: "fr",
@@ -3358,7 +3359,7 @@ export default [
   {
     audio: "02-meereischen.mp3",
     img: "02-meereischen-mdpi.jpg",
-    title: "S'Meerischen",
+    title: "D'Meeréischen",
     i18n: [
       {
         lang: "fr",
@@ -3383,7 +3384,7 @@ export default [
   {
     audio: "",
     img: "01-naischt-mecht-brecht-mdpi.jpg",
-    title: "wien näischt mécht deen näischt brécht",
+    title: "Wien näischt mécht, deen näischt brécht",
     i18n: [
       {
         lang: "fr",
