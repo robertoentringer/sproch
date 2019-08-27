@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import expressions from "@/data/expressions"
 import Expression from "@/components/Expression"
 import Observer from "@/components/Observer"
 
@@ -18,17 +17,24 @@ export default {
   },
   methods: {
     intersectEnter() {
-      if (this.observerVisible) this.expressions.push(expressions[this.expressions.length])
+      if (this.observerVisible) this.expressions.push(this.data[this.expressions.length])
     }
   },
   computed: {
     observerVisible() {
-      return this.expressions.length < expressions.length
+      return this.expressions.length < this.data.length
     }
+  },
+  async created() {
+    import(/* webpackChunkName: "expressions" */ "@/data/expressions").then(({ default: expressions }) => {
+      this.data = expressions
+      this.expressions.push(expressions[0])
+    })
   },
   data() {
     return {
-      expressions: [expressions[0]]
+      data: [],
+      expressions: []
     }
   }
 }
