@@ -16,7 +16,7 @@ export default {
     }
   },
   render() {
-    return this.$$el
+    return this.$el
   },
   mounted() {
     this.observer = new IntersectionObserver(this.callback)
