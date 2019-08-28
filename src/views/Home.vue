@@ -17,7 +17,8 @@ export default {
   },
   methods: {
     intersectEnter() {
-      if (this.observerVisible) this.expressions.push(this.data[this.expressions.length])
+      if (this.observerVisible)
+        this.expressions.push(...this.data.slice(this.expressions.length, this.expressions.length + this.perpage))
     }
   },
   computed: {
@@ -28,12 +29,13 @@ export default {
   async created() {
     import(/* webpackChunkName: "expressions" */ "@/data/expressions").then(({ default: expressions }) => {
       this.data = expressions
-      this.expressions.push(...("IntersectionObserver" in window ? [expressions[0]] : expressions))
+      this.expressions.push(...("IntersectionObserver" in window ? this.data.slice(0, this.perpage) : this.data))
     })
   },
   data() {
     return {
       data: [],
+      perpage: 10,
       expressions: []
     }
   }
