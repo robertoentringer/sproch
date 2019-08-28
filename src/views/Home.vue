@@ -8,7 +8,7 @@
 import Expressions from "@/views/Expressions"
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
     Expressions
   }
