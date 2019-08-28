@@ -1,7 +1,9 @@
 <template>
   <article class="expression">
     <div class="block">
-      <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
+      <router-link :to="{ name: 'expression', params: { id: id } }">
+        <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
+      </router-link>
       <audio v-if="expression.audio" preload="none" controls :src="audio" />
     </div>
     <div class="block">
@@ -20,6 +22,10 @@ export default {
   props: {
     expression: {
       type: Object,
+      required: true
+    },
+    id: {
+      type: Number,
       required: true
     }
   },
@@ -40,7 +46,7 @@ export default {
   margin: 2.5vw;
   .block {
     flex: 1;
-    & img + audio {
+    & a + audio {
       margin-top: 1rem;
     }
     &:first-of-type {
