@@ -15,9 +15,15 @@ const router = new Router({
       component: Home
     },
     {
+      path: "/expressions",
+      name: "expressions",
+      meta: { title: "Expressions Page", description: "expressions description..." },
+      component: () => import(/* webpackChunkName: "single" */ "./views/Expressions")
+    },
+    {
       path: "/expression/:id",
       name: "expression",
-      meta: { title: "Single Page", description: "single page description..." },
+      meta: { title: "Single Page Expression ", description: "single-page expression description..." },
       component: () => import(/* webpackChunkName: "single" */ "./views/Single")
     },
     {
