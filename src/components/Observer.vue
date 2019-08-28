@@ -15,9 +15,6 @@ export default {
       type: String
     }
   },
-  render() {
-    return this.$el
-  },
   mounted() {
     this.observer = new IntersectionObserver(this.callback)
     this.$nextTick(() => this.observer.observe(this.$el))
@@ -29,6 +26,9 @@ export default {
     callback(entries) {
       if (entries[0].isIntersecting) this.$emit("enter")
     }
+  },
+  render() {
+    return this.$el
   }
 }
 </script>
