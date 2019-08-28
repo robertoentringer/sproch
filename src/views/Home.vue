@@ -28,7 +28,7 @@ export default {
   async created() {
     import(/* webpackChunkName: "expressions" */ "@/data/expressions").then(({ default: expressions }) => {
       this.data = expressions
-      this.expressions.push(expressions[0])
+      this.expressions.push(...("IntersectionObserver" in window ? [expressions[0]] : expressions))
     })
   },
   data() {
