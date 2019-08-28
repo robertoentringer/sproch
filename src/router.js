@@ -14,6 +14,11 @@ export default new Router({
       component: Home
     },
     {
+      path: "/expression/:id",
+      name: "expression",
+      component: () => import(/* webpackChunkName: "single" */ "./views/Single")
+    },
+    {
       path: "/about",
       name: "about",
       component: () => import(/* webpackChunkName: "about" */ "./views/About")
