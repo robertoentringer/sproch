@@ -9,7 +9,7 @@ import Expression from "@/components/Expression"
 import expressions from "@/utils/getExpressions"
 
 export default {
-  name: "home",
+  name: "Single",
   components: {
     Expression
   },
