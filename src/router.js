@@ -21,7 +21,7 @@ export default new Router({
     {
       path: "*",
       name: "404",
-      component: () => import(/* webpackChunkName: "about" */ "./views/NotFound")
+      component: () => import(/* webpackChunkName: "not-found" */ "./views/NotFound")
     }
   ]
 })
