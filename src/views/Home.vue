@@ -26,7 +26,7 @@ export default {
       return this.expressions.length < this.data.length
     }
   },
-  async created() {
+  created() {
     import(/* webpackChunkName: "expressions" */ "@/data/expressions").then(({ default: expressions }) => {
       this.data = expressions
       this.expressions.push(...("IntersectionObserver" in window ? this.data.slice(0, this.perpage) : this.data))
