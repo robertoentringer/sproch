@@ -26,4 +26,8 @@ body {
   color: #fff;
   font-size: calc(1em + 1vw);
 }
+#app {
+  overflow-x: hidden;
+  position: relative;
+}
 </style>
