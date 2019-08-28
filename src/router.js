@@ -23,7 +23,7 @@ const router = new Router({
     {
       path: "/expression/:id",
       name: "expression",
-      meta: { title: "Single Page Expression ", description: "single-page expression description..." },
+      meta: { title: "Single Page Expression", description: "single-page expression description..." },
       component: () => import(/* webpackChunkName: "single" */ "./views/Single")
     },
     {
