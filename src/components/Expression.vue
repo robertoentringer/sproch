@@ -1,7 +1,7 @@
 <template>
   <article class="expression">
     <div class="block">
-      <img v-if="expression.img" width="320" height="240" loading="lazy" :alt="expression.img" :src="img" />
+      <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
       <audio v-if="expression.audio" preload="none" controls :src="audio" />
     </div>
     <div class="block">
