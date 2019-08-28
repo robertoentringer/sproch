@@ -30,11 +30,13 @@ export default {
     import(/* webpackChunkName: "expressions" */ "@/data/expressions").then(({ default: expressions }) => {
       this.data = expressions
       this.expressions.push(...("IntersectionObserver" in window ? this.data.slice(0, this.perPage) : this.data))
+      this.totalPages = Math.ceil(this.data.length / this.perPage)
     })
   },
   data() {
     return {
       data: [],
+      totalPages: 0,
       perPage: 10,
       expressions: []
     }
