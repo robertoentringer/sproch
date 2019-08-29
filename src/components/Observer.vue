@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import "intersection-observer"
+
 export default {
   abstract: true,
   props: {

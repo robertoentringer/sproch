@@ -31,7 +31,8 @@ export default {
   },
   created() {
     this.data = expressions
-    this.expressions.push(...("IntersectionObserver" in window ? this.data.slice(0, this.perPage) : this.data))
+    //this.expressions.push(...("IntersectionObserver" in window ? this.data.slice(0, this.perPage) : this.data))
+    this.expressions.push(...this.data.slice(0, this.perPage)) // use polyfill intersection-observer
     this.totalPages = Math.ceil(this.data.length / this.perPage)
   },
   methods: {
