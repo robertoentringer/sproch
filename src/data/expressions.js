@@ -229,9 +229,21 @@ export default [
     img: "10-keiseker-hdpi.jpg",
     title: "Kéiseker",
     i18n: [
-      { lang: "fr", title: "Hérisson", describe: "Petit animal qu'on rencontre souvent dans les jardins." },
-      { lang: "de", title: "Igel", describe: "Kleines Tier welches oft in Gärten anzutreffen ist." },
-      { lang: "en", title: "Hedgehog", describe: "Small animal which can often be found in gardens." }
+      {
+        lang: "fr",
+        title: "Hérisson",
+        describe: "Petit animal qu'on rencontre souvent dans les jardins."
+      },
+      {
+        lang: "de",
+        title: "Igel",
+        describe: "Kleines Tier welches oft in Gärten anzutreffen ist."
+      },
+      {
+        lang: "en",
+        title: "Hedgehog",
+        describe: "Small animal which can often be found in gardens."
+      }
     ]
   },
   {
@@ -2110,9 +2122,21 @@ export default [
     title:
       "Mama kuck däi Kand hei ston, Well et wëll dir Merci son, A ganz lues son ech dir: Mama ech si frou mat dir!",
     i18n: [
-      { lang: "fr", title: "Maman, voilà ton enfant ici", describe: "venu pour te dire merci." },
-      { lang: "de", title: "Mama, sieh dein Kind hier stehn,", describe: "um zu sagen Dankeschön." },
-      { lang: "en", title: "Mummy see your child stand here,", describe: "to tell you all his heartfelt thanks." }
+      {
+        lang: "fr",
+        title: "Maman, voilà ton enfant ici",
+        describe: "venu pour te dire merci."
+      },
+      {
+        lang: "de",
+        title: "Mama, sieh dein Kind hier stehn,",
+        describe: "um zu sagen Dankeschön."
+      },
+      {
+        lang: "en",
+        title: "Mummy see your child stand here,",
+        describe: "to tell you all his heartfelt thanks."
+      }
     ]
   },
   {
