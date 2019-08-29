@@ -8,7 +8,7 @@
 
 <style lang="scss">
 #nav {
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 2rem 1rem 2.5rem;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
