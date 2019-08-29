@@ -1,16 +1,24 @@
 <template>
-  <div id="app">
+  <div id="app" :class="pageClass">
     <NavBar />
-    <main><router-view /></main>
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar"
+
 export default {
   name: "App",
   components: {
     NavBar
+  },
+  computed: {
+    pageClass() {
+      return `view-${this.$route.name}`
+    }
   }
 }
 </script>
