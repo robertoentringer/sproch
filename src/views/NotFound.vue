@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <section class="about">
     <h1>Page not Found 😵</h1>
-  </div>
+  </section>
 </template>
