@@ -32,6 +32,10 @@ export default {
   position: relative;
   main {
     padding: 0 5vw;
+    flex: 1;
+    section > * {
+      margin-top: 0;
+    }
   }
 }
 </style>
