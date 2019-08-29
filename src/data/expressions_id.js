@@ -1528,7 +1528,7 @@ export default [
   {
     audio: "07-leiw.mp3",
     img: "",
-    title: "leiw",
+    title: "Ech hunn dech léif",
     i18n: [
       {
         lang: "fr",
@@ -1547,7 +1547,7 @@ export default [
       }
     ],
     id: 58,
-    slug: "leiw"
+    slug: "ech-hunn-dech-leif"
   },
   {
     audio: "06-fuesbok.mp3",
