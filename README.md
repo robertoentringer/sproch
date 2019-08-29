@@ -1,4 +1,4 @@
-#De Sproch vun der Woch
+# De Sproch vun der Woch
 
     Le proverbe de la semaine
     The weekly expression
