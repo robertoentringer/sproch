@@ -1,29 +1,9 @@
-# sproch-vue-cli
+#De Sproch vun der Woch
 
-## Project setup
-```
-npm install
-```
+    Le proverbe de la semaine
+    The weekly expression
+    Der Spruch der Woche
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Les expressions reproduites sur ce site ont étés origilamente publiés sur le [portail officiel du Grand-Duché de Luxembourg](http://luxembourg.public.lu/) et disponibilisées ici avec l'autorisation préable de son editor.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[![luxembourg.png](src/assets/luxembourg.png)](http://luxembourg.public.lu/)] 
