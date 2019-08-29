@@ -63,7 +63,7 @@ export default {
     &:last-of-type {
       background-color: $color-tertiary;
       padding: 1.5rem;
-      color: #333;
+      color: $text-dark;
       display: flex;
       flex-direction: column;
     }
