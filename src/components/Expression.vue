@@ -1,7 +1,7 @@
 <template>
   <article class="expression">
     <div class="block">
-      <router-link :to="{ name: 'expression', params: { id: id } }">
+      <router-link :to="{ name: 'expression', params: { id } }">
         <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
       </router-link>
       <audio v-if="expression.audio" preload="none" controls :src="audio" />
