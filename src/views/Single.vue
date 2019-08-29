@@ -14,7 +14,7 @@ export default {
     Expression
   },
   beforeRouteEnter(to, from, next) {
-    const [expression] = expressions.filter(item => item.slug == to.params.slug)
+    const expression = expressions.find(item => item.slug == to.params.slug)
     next(expression ? vm => (vm.expression = expression) : { name: "404", params: [to.path], replace: true })
   },
   data() {
