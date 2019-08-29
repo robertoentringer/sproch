@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
-    <router-view />
+    <main><router-view /></main>
   </div>
 </template>
 
@@ -16,18 +16,14 @@ export default {
 </script>
 
 <style src="normalize.css" />
+<style src="@/scss/base.scss" lang="scss"></style>
+
 <style lang="scss">
-body {
-  background: #333;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fff;
-  font-size: calc(1em + 1vw);
-}
 #app {
   overflow-x: hidden;
   position: relative;
+  main {
+    padding: 0 5vw;
+  }
 }
 </style>

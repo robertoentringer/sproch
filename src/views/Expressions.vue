@@ -1,8 +1,8 @@
 <template>
-  <main class="expressions">
+  <section class="expressions">
     <Expression v-for="(expression, i) in expressions" :key="i" :slug="expression.slug" :expression="expression" />
     <Observer v-if="observerVisible" @enter="intersectEnter" />
-  </main>
+  </section>
 </template>
 
 <script>

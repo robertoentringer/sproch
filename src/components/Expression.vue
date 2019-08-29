@@ -39,14 +39,14 @@ export default {
 <style lang="scss" scoped>
 .expression {
   display: flex;
-  margin: 2.5vw;
+  margin: 5vw 0;
   .block {
     flex: 1;
     & a + audio {
       margin-top: 1rem;
     }
     &:first-of-type {
-      background-color: #e91e63;
+      background-color: $color-secondary;
       padding: 1rem;
       flex-direction: column;
       line-height: 0;
@@ -61,7 +61,7 @@ export default {
       width: 100%;
     }
     &:last-of-type {
-      background-color: #ffc107;
+      background-color: $color-tertiary;
       padding: 1.5rem;
       color: #333;
       display: flex;

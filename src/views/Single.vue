@@ -1,7 +1,7 @@
 <template>
-  <main class="single">
+  <section class="single">
     <Expression :expression="expression" />
-  </main>
+  </section>
 </template>
 
 <script>

@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  outline: none;
+}
+
+body {
+  background: $bg-dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+input,
+button {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-size: calc(1em + 1vw);
+  text-align: center;
+  color: $text-light;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+label,
+button {
+  cursor: pointer;
+  line-height: 1.6;
+  background: none;
+  border: 0;
+}
+input {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 5px;
+  border: 0;
+  background: none;
+  outline: none;
+  &[type="number"] {
+    padding: 0 0 0 10px;
+    width: 70px;
+  }
+  &:not([type="button"]) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2px
+  }
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}

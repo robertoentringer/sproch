@@ -1,8 +1,8 @@
 <template>
-  <div id="nav">
+  <nav id="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/About">About</router-link>
-  </div>
+  </nav>
 </template>
 
 <style lang="scss">
@@ -16,13 +16,13 @@
   a {
     text-decoration: none;
     font-weight: 700;
-    color: #fcfcfc;
+    color: $text-light;
     margin: 0 5px;
     padding: 0.5rem;
     text-transform: capitalize;
     flex: 1;
     &.router-link-exact-active {
-      color: #42b983;
+      color: $color-primary;
     }
   }
 }
