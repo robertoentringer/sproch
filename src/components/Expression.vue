@@ -1,7 +1,7 @@
 <template>
   <article class="expression">
     <div class="block">
-      <router-link :to="{ name: 'expression', params: { id } }">
+      <router-link v-if="expression.slug" :to="{ name: 'expression', params: { slug: expression.slug } }">
         <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
       </router-link>
       <audio v-if="expression.audio" preload="none" controls :src="audio" />
@@ -22,10 +22,6 @@ export default {
   props: {
     expression: {
       type: Object,
-      required: true
-    },
-    id: {
-      type: Number,
       required: true
     }
   },

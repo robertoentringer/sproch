@@ -1,6 +1,6 @@
 <template>
   <main class="single">
-    <Expression :id="id" :expression="expression" />
+    <Expression :expression="expression" />
   </main>
 </template>
 
@@ -14,14 +14,12 @@ export default {
     Expression
   },
   beforeRouteEnter(to, from, next) {
-    next(expressions[to.params.id] ? {} : { name: "404", params: [to.path], replace: true })
+    const [expression] = expressions.filter(item => item.slug == to.params.slug)
+    next(expression ? vm => (vm.expression = expression) : { name: "404", params: [to.path], replace: true })
   },
-  computed: {
-    id() {
-      return parseInt(this.$route.params.id)
-    },
-    expression() {
-      return expressions[this.id]
+  data() {
+    return {
+      expression: {}
     }
   }
 }

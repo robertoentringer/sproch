@@ -21,7 +21,7 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "single" */ "./views/Expressions")
     },
     {
-      path: "/expression/:id",
+      path: "/expression/:slug",
       name: "expression",
       meta: { title: "Single Page Expression", description: "single-page expression description..." },
       component: () => import(/* webpackChunkName: "single" */ "./views/Single")
