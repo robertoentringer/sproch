@@ -35,6 +35,7 @@ const router = new Router({
     {
       path: "*",
       name: "404",
+      meta: { title: "Page Not Found" },
       component: () => import(/* webpackChunkName: "not-found" */ "./views/NotFound")
     }
   ]
