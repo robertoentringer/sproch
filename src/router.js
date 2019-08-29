@@ -33,6 +33,12 @@ const router = new Router({
       component: () => import(/* webpackChunkName: "about" */ "./views/About")
     },
     {
+      path: "/contact",
+      name: "contact",
+      meta: { title: "Contact Page", description: "contact page description..." },
+      component: () => import(/* webpackChunkName: "about" */ "./views/Contact")
+    },
+    {
       path: "*",
       name: "404",
       meta: { title: "Page Not Found" },
