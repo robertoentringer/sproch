@@ -16,13 +16,13 @@
   a {
     text-decoration: none;
     font-weight: 700;
-    color: #fcfcfc;
+    color: $text-light;
     margin: 0 5px;
     padding: 0.5rem;
     text-transform: capitalize;
     flex: 1;
     &.router-link-exact-active {
-      color: #42b983;
+      color: $color-primary;
     }
   }
 }
