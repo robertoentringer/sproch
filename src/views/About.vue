@@ -22,7 +22,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="../assets/luxembourg.png" alt="logo-portail-grand-duche-du-luxembourg" />
+        <img src="@/assets/luxembourg.png" alt="logo-portail-grand-duche-du-luxembourg" />
       </a>
     </p>
   </section>

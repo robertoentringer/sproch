@@ -1,6 +1,6 @@
 import Vue from "vue"
 import Router from "vue-router"
-import Home from "./views/Home.vue"
+import Home from "@/views/Home.vue"
 
 Vue.use(Router)
 
@@ -18,31 +18,31 @@ const router = new Router({
       path: "/expressions",
       name: "expressions",
       meta: { title: "Expressions Page", description: "expressions description..." },
-      component: () => import(/* webpackChunkName: "single" */ "./views/Expressions")
+      component: () => import(/* webpackChunkName: "single" */ "@/views/Expressions")
     },
     {
       path: "/expression/:slug",
       name: "expression",
       meta: { title: "Single Page Expression", description: "single-page expression description..." },
-      component: () => import(/* webpackChunkName: "single" */ "./views/Single")
+      component: () => import(/* webpackChunkName: "single" */ "@/views/Single")
     },
     {
       path: "/about",
       name: "about",
       meta: { title: "About Page", description: "about page description..." },
-      component: () => import(/* webpackChunkName: "about" */ "./views/About")
+      component: () => import(/* webpackChunkName: "about" */ "@/views/About")
     },
     {
       path: "/contact",
       name: "contact",
       meta: { title: "Contact Page", description: "contact page description..." },
-      component: () => import(/* webpackChunkName: "about" */ "./views/Contact")
+      component: () => import(/* webpackChunkName: "about" */ "@/views/Contact")
     },
     {
       path: "*",
       name: "404",
       meta: { title: "Page Not Found" },
-      component: () => import(/* webpackChunkName: "not-found" */ "./views/NotFound")
+      component: () => import(/* webpackChunkName: "not-found" */ "@/views/NotFound")
     }
   ]
 })
