@@ -1,6 +1,6 @@
 <template>
   <section class="expressions">
-    <Expression v-for="(expression, i) in expressions" :key="i" :slug="expression.slug" :expression="expression" />
+    <Expression v-for="(item, i) in expressions" :key="i" :expression="item" />
     <Observer v-if="observerVisible" @enter="intersectEnter" />
   </section>
 </template>
