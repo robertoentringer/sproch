@@ -5,7 +5,6 @@
       <transition name="fade-down" mode="out-in" appear>
         <router-view />
       </transition>
-      <router-view />
     </main>
   </div>
 </template>
