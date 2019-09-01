@@ -1,7 +1,7 @@
 <template>
   <section class="expressions">
-    <Expression v-for="(item, i) in expressions" :key="i" :expression="item" />
-    <Observer v-if="observerVisible" @enter="intersectEnter" />
+    <Expression v-for="item in expressions" :key="item.slug" :expression="item" />
+    <Observer v-if="observerVisible" @intersect="intersect" />
   </section>
 </template>
 
@@ -25,14 +25,16 @@ export default {
     }
   },
   computed: {
+    loaded() {
+      return this.expressions.length
+    },
     observerVisible() {
-      return this.expressions.length < this.data.length
+      return this.loaded < this.data.length
     }
   },
   created() {
     this.data = expressions
-    //this.expressions.push(...("IntersectionObserver" in window ? this.data.slice(0, this.perPage) : this.data))
-    this.expressions.push(...this.data.slice(0, this.perPage)) // use polyfill intersection-observer
+    this.expressions.push(...this.data.slice(0, this.$root.loaded || this.perPage))
     this.totalPages = Math.ceil(this.data.length / this.perPage)
   },
   methods: {
