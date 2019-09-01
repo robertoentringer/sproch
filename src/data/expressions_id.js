@@ -500,7 +500,7 @@ export default [
       }
     ],
     id: 18,
-    slug: "vill-gleck-am-neie-joer"
+    slug: "vill-gleck-am-neie-joer-1"
   },
   {
     audio: "51-feierdeeg.mp3",
@@ -1103,7 +1103,7 @@ export default [
       }
     ],
     id: 41,
-    slug: "ech-sprange-geschwenn-aus-der-kescht"
+    slug: "ech-sprange-geschwenn-aus-der-1"
   },
   {
     audio: "23-kescht.mp3",
@@ -1130,7 +1130,7 @@ export default [
       }
     ],
     id: 42,
-    slug: "ech-sprange-geschwenn-aus-der-kescht"
+    slug: "ech-sprange-geschwenn-aus-der-kescht-2"
   },
   {
     audio: "29-heck.mp3",
@@ -1289,7 +1289,7 @@ export default [
     slug: "deen-deedegt-wei-en-affekot"
   },
   {
-    audio: "",
+    audio: "21-zong.mp3",
     img: "2018_16_LongZong-hdpi.jpg",
     title: "Vun der Long op d'Zong",
     i18n: [
@@ -1313,7 +1313,7 @@ export default [
       }
     ],
     id: 49,
-    slug: "vun-der-long-op-d-zong"
+    slug: "vun-der-long-op-d-zong-1"
   },
   {
     audio: "11-brach.mp3",
@@ -1706,7 +1706,7 @@ export default [
       }
     ],
     id: 64,
-    slug: "vill-gleck-am-neie-joer"
+    slug: "vill-gleck-am-neie-joer-2"
   },
   {
     audio: "50-kichelchen.mp3",
@@ -1733,7 +1733,7 @@ export default [
       }
     ],
     id: 65,
-    slug: "kichelchen"
+    slug: "kichelchen-1"
   },
   {
     audio: "49-naischt-kascht.mp3",
@@ -1814,7 +1814,7 @@ export default [
       }
     ],
     id: 68,
-    slug: "dei-well-lafen-am-besch"
+    slug: "dei-well-lafen-am-besch-1"
   },
   {
     audio: "47b-Kouhhaut.mp3",
@@ -2186,7 +2186,7 @@ export default [
       }
     ],
     id: 82,
-    slug: "wat-een-net-am-kapp-huet-muss-een-an"
+    slug: "wat-een-net-am-kapp-huet-muss-een-an-1"
   },
   {
     audio: "30-lammes.mp3",
@@ -2264,7 +2264,7 @@ export default [
       }
     ],
     id: 85,
-    slug: "een-af-mecht-der-honnert"
+    slug: "een-af-mecht-der-honnert-1"
   },
   {
     audio: "25-groussherzogsgebuertsdag.mp3",
@@ -2580,7 +2580,7 @@ export default [
       }
     ],
     id: 97,
-    slug: "vun-der-long-op-d-zong"
+    slug: "vun-der-long-op-d-zong-2"
   },
   {
     audio: "13-deiwell.mp3",
@@ -2608,7 +2608,7 @@ export default [
       }
     ],
     id: 98,
-    slug: "dei-well-lafen-am-besch"
+    slug: "dei-well-lafen-am-besch-2"
   },
   {
     audio: "10-fauscht-op-a.mp3",
@@ -2663,7 +2663,7 @@ export default [
       }
     ],
     id: 100,
-    slug: "wat-een-net-am-kapp-huet-muss-een-an"
+    slug: "wat-een-net-am-kapp-huet-muss-een-an-2"
   },
   {
     audio: "07-bengele.mp3",
@@ -2825,7 +2825,7 @@ export default [
       }
     ],
     id: 106,
-    slug: "kichelchen"
+    slug: "kichelchen-2"
   },
   {
     audio: "51-chreschtdag.mp3",
@@ -2852,7 +2852,7 @@ export default [
       }
     ],
     id: 107,
-    slug: "chreschtdag"
+    slug: "chreschtdag-1"
   },
   {
     audio: "",
@@ -2933,7 +2933,7 @@ export default [
       }
     ],
     id: 110,
-    slug: "een-af-mecht-der-honnert"
+    slug: "een-af-mecht-der-honnert-2"
   },
   {
     audio: "44-deckebuttek.mp3",
@@ -3250,7 +3250,7 @@ export default [
       }
     ],
     id: 122,
-    slug: "mamakuck-dai-kand-hei-ston-wel-et-well-dir-merci"
+    slug: "mamakuck-dai-kand-hei-ston-wel-et-well-dir-merci-1"
   },
   {
     audio: "19-feierkrop.mp3",
@@ -3383,7 +3383,7 @@ export default [
       }
     ],
     id: 127,
-    slug: "chreschtdag"
+    slug: "chreschtdag-2"
   },
   {
     audio: "41-nondikass.mp3",
@@ -3626,7 +3626,7 @@ export default [
       }
     ],
     id: 136,
-    slug: "mamakuck-dai-kand-hei-ston-wel-et-well-dir-merci"
+    slug: "mamakuck-dai-kand-hei-ston-wel-et-well-dir-merci-2"
   },
   {
     audio: "23-himmelsdeierchen.mp3",
