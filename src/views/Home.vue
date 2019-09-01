@@ -1,7 +1,5 @@
 <template>
-  <section class="home">
-    <Expressions />
-  </section>
+  <Expressions class="home" />
 </template>
 
 <script>
