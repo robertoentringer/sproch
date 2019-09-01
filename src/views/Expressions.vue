@@ -36,9 +36,9 @@ export default {
     this.totalPages = Math.ceil(this.data.length / this.perPage)
   },
   methods: {
-    intersectEnter() {
-      if (this.observerVisible)
-        this.expressions.push(...this.data.slice(this.expressions.length, this.expressions.length + this.perPage))
+    intersect() {
+      const items = this.data.slice(this.loaded, this.loaded + this.perPage)
+      this.$root.loaded = this.expressions.push(...items)
     }
   }
 }
