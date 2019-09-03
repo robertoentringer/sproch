@@ -1,46 +1,68 @@
 <template>
   <section class="expressions">
-    <Expression v-for="item in expressions" :key="item.slug" :expression="item" />
-    <Observer v-if="observerVisible" @intersect="intersect" />
+    <Expression
+      v-for="(item, i) in expressions"
+      :key="i"
+      ref="items"
+      :data-slug="item.slug"
+      :data-title="item.slug"
+      :expression="item"
+    />
   </section>
 </template>
 
 <script>
 import Expression from "@/components/Expression"
-import Observer from "@/components/Observer"
 import expressions from "@/utils/getExpressions"
 
 export default {
   name: "Expressions",
-  components: {
-    Expression,
-    Observer
-  },
+  components: { Expression },
   data() {
     return {
-      data: [],
       totalPages: 0,
-      perPage: 10,
-      expressions: []
+      perPage: 3,
+      expressions: [],
+      visibles: [],
+      observer: null,
+      current: null,
+      intersectOptions: {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.25
+      }
     }
   },
   computed: {
     loaded() {
       return this.expressions.length
-    },
-    observerVisible() {
-      return this.loaded < this.data.length
     }
   },
   created() {
-    this.data = expressions
-    this.expressions.push(...this.data.slice(0, this.$root.loaded || this.perPage))
-    this.totalPages = Math.ceil(this.data.length / this.perPage)
+    this.expressions.push(...expressions.slice(0, this.$root.loaded || this.perPage))
+    this.totalPages = Math.ceil(expressions.length / this.perPage)
+  },
+  mounted() {
+    this.$options.observer = new IntersectionObserver(this.handleIntersect, this.intersectOptions)
+    this.$refs.items.forEach(item => this.$options.observer.observe(item.$el))
+  },
+  destroyed() {
+    this.$options.observer.disconnect()
   },
   methods: {
-    intersect() {
-      const items = this.data.slice(this.loaded, this.loaded + this.perPage)
-      this.$root.loaded = this.expressions.push(...items)
+    handleIntersect(entries) {
+      entries.forEach(({ target: { dataset: { slug, title } }, /*intersectionRatio*/ isIntersecting }) => {
+        if (
+          this.$route.hash.replace(/^#/, "") !== slug &&
+          isIntersecting /*intersectionRatio > this.intersectOptions.threshold*/
+        ) {
+          document.title = `${this.$route.meta.title} - ${title}`
+          //this.$router.push({ hash: slug })
+          window.history.pushState("", "", `#${slug}`)
+          //this.visibles.push(slug)
+        }
+        //else this.visibles = this.visibles.filter(item => item !== slug)
+      })
     }
   }
 }
