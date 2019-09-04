@@ -2,4 +2,8 @@
 
 import expressions from "@/data/expressions_id"
 
+export const getExpressionById = id => expressions.find(item => (item.id = id))
+
+export const getExpressionBySlug = slug => expressions.find(item => item.slug == slug)
+
 export default expressions
