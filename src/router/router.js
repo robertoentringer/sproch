@@ -2,8 +2,6 @@ import Vue from "vue"
 import Router from "vue-router"
 import Home from "@/views/Home.vue"
 
-if ("scrollRestoration" in history) history.scrollRestoration = "manual"
-
 Vue.use(Router)
 
 const router = new Router({
@@ -46,19 +44,19 @@ const router = new Router({
       meta: { title: "Page Not Found" },
       component: () => import(/* webpackChunkName: "not-found" */ "@/views/NotFound")
     }
-  ] /* ,
+  ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition
     else if (to.hash) return { selector: to.hash }
+    else if ("page" in to.query) return
     else return { x: 0, y: 0 }
-  } */
+  }
 })
 
-router.afterEach(to => {
-  Vue.nextTick(() => {
-    document.title = to.meta.title
-    document.head.querySelector("[name=Description]").setAttribute("content", to.meta.description)
-  })
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  document.head.querySelector("[name=Description]").setAttribute("content", to.meta.description)
+  next()
 })
 
 export default router
