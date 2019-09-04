@@ -2,7 +2,7 @@ import Vue from "vue"
 import Router from "vue-router"
 import Home from "@/views/Home.vue"
 
-//if ("scrollRestoration" in history) history.scrollRestoration = "manual"
+if ("scrollRestoration" in history) history.scrollRestoration = "manual"
 
 Vue.use(Router)
 
@@ -54,10 +54,11 @@ const router = new Router({
   } */
 })
 
-router.beforeEach((to, from, next) => {
-  document.title = to.meta.title
-  document.head.querySelector("[name=Description]").setAttribute("content", to.meta.description)
-  next()
+router.afterEach(to => {
+  Vue.nextTick(() => {
+    document.title = to.meta.title
+    document.head.querySelector("[name=Description]").setAttribute("content", to.meta.description)
+  })
 })
 
 export default router

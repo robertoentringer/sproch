@@ -5,7 +5,7 @@
       :key="i"
       ref="items"
       :data-slug="item.slug"
-      :data-title="item.slug"
+      :data-title="item.title"
       :expression="item"
     />
   </section>
@@ -25,11 +25,11 @@ export default {
       expressions: [],
       visibles: [],
       observer: null,
-      current: null,
+      pageTitle: "",
       intersectOptions: {
         root: null,
         rootMargin: "0px",
-        threshold: 0.25
+        threshold: 0.2
       }
     }
   },
@@ -41,6 +41,7 @@ export default {
   created() {
     this.expressions.push(...expressions.slice(0, this.$root.loaded || this.perPage))
     this.totalPages = Math.ceil(expressions.length / this.perPage)
+    this.pageTitle = this.$route.meta.title
   },
   mounted() {
     this.$options.observer = new IntersectionObserver(this.handleIntersect, this.intersectOptions)
@@ -51,17 +52,11 @@ export default {
   },
   methods: {
     handleIntersect(entries) {
-      entries.forEach(({ target: { dataset: { slug, title } }, /*intersectionRatio*/ isIntersecting }) => {
-        if (
-          this.$route.hash.replace(/^#/, "") !== slug &&
-          isIntersecting /*intersectionRatio > this.intersectOptions.threshold*/
-        ) {
-          document.title = `${this.$route.meta.title} - ${title}`
-          //this.$router.push({ hash: slug })
-          window.history.pushState("", "", `#${slug}`)
-          //this.visibles.push(slug)
+      entries.forEach(({ target: { dataset: { slug, title } }, isIntersecting }) => {
+        if (isIntersecting && this.$route.hash.replace(/^#/, "") !== slug) {
+          this.$router.push({ query: { slug } }, () => (this.$route.meta.title = `${this.pageTitle} - ${title}`))
+          console.log(history.state)
         }
-        //else this.visibles = this.visibles.filter(item => item !== slug)
       })
     }
   }
