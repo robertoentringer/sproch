@@ -1,61 +1,70 @@
 <template>
   <section class="expressions">
-    <Expression
-      v-for="(item, i) in expressions"
-      :key="i"
-      ref="items"
-      :data-slug="item.slug"
-      :data-title="item.title"
-      :expression="item"
-    />
+    <Expression v-for="(item, i) in expressions" :key="i" ref="items" :data-slug="item.slug" :expression="item" />
   </section>
 </template>
 
 <script>
 import Expression from "@/components/Expression"
-import expressions from "@/utils/getExpressions"
+import { getExpressionsFirsts } from "@/utils/getExpressions"
+
+const expressions = getExpressionsFirsts(10)
 
 export default {
   name: "Expressions",
   components: { Expression },
   data() {
     return {
-      totalPages: 0,
-      perPage: 3,
+      perPage: 2,
       expressions: [],
-      visibles: [],
-      observer: null,
-      pageTitle: "",
-      intersectOptions: {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.2
-      }
+      page: this.$route.query.page || 1,
+      observer: null
     }
   },
   computed: {
+    total() {
+      return expressions.length
+    },
     loaded() {
       return this.expressions.length
+    },
+    pages() {
+      return Math.ceil(this.total / this.perPage)
+    }
+  },
+  watch: {
+    $route: {
+      immediate: true,
+      handler() {
+        console.log("watch $route")
+      }
     }
   },
   created() {
-    this.expressions.push(...expressions.slice(0, this.$root.loaded || this.perPage))
-    this.totalPages = Math.ceil(expressions.length / this.perPage)
-    this.pageTitle = this.$route.meta.title
+    this.expressions.push(...expressions.slice(this.loaded, this.loaded + this.perPage * this.page))
   },
   mounted() {
-    this.$options.observer = new IntersectionObserver(this.handleIntersect, this.intersectOptions)
-    this.$refs.items.forEach(item => this.$options.observer.observe(item.$el))
+    this.observer = new IntersectionObserver(this.handleIntersect)
+    this.observeLast()
   },
   destroyed() {
-    this.$options.observer.disconnect()
+    this.observer.disconnect()
   },
   methods: {
+    observeLast() {
+      this.$nextTick(() => {
+        this.observer.observe(this.$refs.items[this.loaded - 1].$el)
+      })
+    },
     handleIntersect(entries) {
-      entries.forEach(({ target: { dataset: { slug, title } }, isIntersecting }) => {
-        if (isIntersecting && this.$route.hash.replace(/^#/, "") !== slug) {
-          this.$router.push({ query: { slug } }, () => (this.$route.meta.title = `${this.pageTitle} - ${title}`))
-          console.log(history.state)
+      entries.forEach(({ target, isIntersecting }) => {
+        if (isIntersecting) {
+          this.observer.unobserve(target)
+          if (this.loaded < this.total) {
+            this.expressions.push(...expressions.slice(this.loaded, this.loaded + this.perPage))
+            this.observeLast()
+            this.$router.push({ query: { page: ++this.page } })
+          } else this.observer.disconnect()
         }
       })
     }
