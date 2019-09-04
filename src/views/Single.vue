@@ -6,7 +6,7 @@
 
 <script>
 import Expression from "@/components/Expression"
-import expressions from "@/utils/getExpressions"
+import { getExpressionBySlug } from "@/utils/getExpressions"
 
 export default {
   name: "Single",
@@ -14,7 +14,7 @@ export default {
     Expression
   },
   beforeRouteEnter(to, from, next) {
-    const expression = expressions.find(item => item.slug == to.params.slug)
+    const expression = Object.freeze(getExpressionBySlug(to.params.slug))
     next(expression ? vm => (vm.expression = expression) : { name: "404", params: [to.path], replace: true })
   },
   data() {
