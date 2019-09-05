@@ -2,11 +2,11 @@
   <section>
     <Expression
       v-for="(item, i) in expressions"
-      :id="p(i) ? `page-${p(i)}` : null"
       :key="i"
       ref="items"
       :data-slug="item.slug"
-      :data-page="p(i)"
+      :data-p="Math.ceil(i / perPage + 1)"
+      :data-page="i % perPage === 0 && i / perPage ? i / perPage + 1 : ''"
       :expression="item"
     />
   </section>
@@ -16,7 +16,7 @@
 import Expression from "@/components/Expression"
 import { getExpressionsFirsts } from "@/utils/getExpressions"
 
-const expressions = getExpressionsFirsts(20)
+const expressions = getExpressionsFirsts(16)
 
 export default {
   name: "Expressions",
@@ -25,7 +25,7 @@ export default {
   components: { Expression },
   data() {
     return {
-      perPage: 5,
+      perPage: 1,
       expressions: [],
       page: parseInt(this.$route.query.page) || 1,
       observer: null
@@ -44,22 +44,36 @@ export default {
   },
   mounted() {
     this.observer = new IntersectionObserver(this.intersect)
-    this.$refs.items.forEach(({ $el }) => $el.dataset.page && this.observer.observe($el))
-    //if (this.$route.query.page) this.$router.push({ hash: `#page-${this.$route.query.page}` })
+    this.observe()
   },
   destroyed() {
-    this.observer.disconnect()
+    this.disconnect()
   },
   methods: {
-    p(i) {
-      return ++i % this.perPage === 0 ? i / this.perPage + 1 : null
+    disconnect() {
+      this.observer.disconnect()
+    },
+    observe() {
+      this.$nextTick(() => {
+        this.observer.observe(this.$refs.items[this.loaded - 1].$el)
+      })
     },
     intersect([{ target, isIntersecting }]) {
       const slug = target.dataset.slug
-      const pageData = parseInt(target.dataset.page)
-      const pageUrl = parseInt(this.$route.query.page)
-      //console.log(slug, ", data:", pageData, ", url:", pageUrl, ", intersection:", isIntersecting)
-      //if (isIntersecting && pageUrl !== pageData) this.$router.push({ query: { page: pageData } })
+      const page = target.dataset.page
+      if (isIntersecting) {
+        console.log("true", slug, page)
+        //this.observer.unobserve(target)
+        if (this.loaded < this.total) {
+          //this.page++
+          this.expressions.push(...expressions.slice(this.loaded, this.loaded + this.perPage))
+          this.observe()
+          //this.$router.push({ query: { page } })
+        }
+      } else {
+        //console.log("false", slug, page)
+        //this.$router.push({ query: { page } })
+      }
     }
   }
 }

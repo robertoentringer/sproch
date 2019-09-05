@@ -1,17 +1,17 @@
 <template>
   <article class="expression">
-    <div class="block">
+    <!--<divclass="block">
       <router-link v-if="expression.slug" :to="{ name: 'expression', params: { slug: expression.slug } }">
         <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
       </router-link>
       <audio v-if="expression.audio" preload="none" controls :src="audio" />
-    </div>
+    </div>-->
     <div class="block">
       <h1 class="title">{{ expression.title }}</h1>
-      <div v-for="traduction in expression.i18n" :key="traduction.lang">
+      <!--<div v-for="traduction in expression.i18n" :key="traduction.lang">
         <h3 class="title">{{ traduction.lang.toUpperCase() }} - {{ traduction.title }}</h3>
         <p>{{ traduction.describe }}</p>
-      </div>
+      </div>-->
     </div>
   </article>
 </template>
@@ -49,7 +49,6 @@ export default {
       background-color: $color-secondary;
       padding: 1rem;
       flex-direction: column;
-      line-height: 0;
       max-width: 30%;
     }
     &:first-of-type img {
