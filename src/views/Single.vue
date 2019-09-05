@@ -10,6 +10,8 @@ import { getExpressionBySlug } from "@/utils/getExpressions"
 
 export default {
   name: "Single",
+  title: "Single Expression Page",
+  description: "Description Single Expression Page...",
   components: {
     Expression
   },

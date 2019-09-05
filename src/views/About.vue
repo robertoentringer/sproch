@@ -30,7 +30,9 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
+  title: "About Page",
+  description: "Description About Page..."
 }
 </script>
 

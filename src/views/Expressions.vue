@@ -12,6 +12,8 @@ const expressions = getExpressionsFirsts(10)
 
 export default {
   name: "Expressions",
+  title: "Expressions Page",
+  description: "Description Expressions Page...",
   components: { Expression },
   data() {
     return {
