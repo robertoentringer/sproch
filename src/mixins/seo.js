@@ -4,10 +4,12 @@ const getValue = (key, vm) => {
 }
 
 export default {
-  created() {
-    const title = getValue("title", this)
-    if (title) document.title = title
-    const description = getValue("description", this)
-    if (description) document.head.querySelector("[name=Description]").setAttribute("content", description)
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      const title = getValue("title", vm)
+      if (title) document.title = title
+      const description = getValue("description", vm)
+      if (description) document.head.querySelector("[name=Description]").setAttribute("content", description)
+    })
   }
 }
