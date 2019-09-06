@@ -2,11 +2,10 @@
   <section>
     <Expression
       v-for="(item, i) in expressions"
-      :id="p(i) ? `page-${p(i)}` : null"
       :key="i"
       ref="items"
       :data-slug="item.slug"
-      :data-page="p(i)"
+      :data-page="dataPage(i)"
       :expression="item"
     />
   </section>
@@ -25,7 +24,7 @@ export default {
   components: { Expression },
   data() {
     return {
-      perPage: 5,
+      perPage: 4,
       expressions: [],
       page: parseInt(this.$route.query.page) || 1,
       observer: null
@@ -43,18 +42,25 @@ export default {
     this.expressions.push(...expressions.slice(this.loaded, this.loaded + this.perPage * this.page))
   },
   mounted() {
+    const page = this.$route.query.page
     this.observer = new IntersectionObserver(this.intersect)
-    this.$refs.items.forEach(({ $el }) => $el.dataset.page && this.observer.observe($el))
+    this.$refs.items.forEach(({ $el }) => {
+      if ($el.dataset.page) {
+        this.observer.observe($el)
+        if ($el.dataset.page === page) $el.scrollIntoView()
+      }
+    })
     //if (this.$route.query.page) this.$router.push({ hash: `#page-${this.$route.query.page}` })
   },
   destroyed() {
     this.observer.disconnect()
   },
   methods: {
-    p(i) {
+    dataPage(i) {
       return ++i % this.perPage === 0 ? i / this.perPage + 1 : null
     },
     intersect([{ target, isIntersecting }]) {
+      //console.log(target.getBoundingClientRect().top + window.pageYOffset)
       const slug = target.dataset.slug
       const pageData = parseInt(target.dataset.page)
       const pageUrl = parseInt(this.$route.query.page)
