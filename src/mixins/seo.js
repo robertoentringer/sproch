@@ -9,7 +9,8 @@ export default {
       const title = getValue("title", vm)
       if (title) document.title = title
       const description = getValue("description", vm)
-      if (description) document.head.querySelector("[name=Description]").setAttribute("content", description)
+      if (description)
+        document.head.querySelector("[name=Description]").setAttribute("content", description)
     })
   }
 }
