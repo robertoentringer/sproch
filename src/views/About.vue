@@ -51,6 +51,9 @@ export default {
     margin-top: 1rem;
     padding: 10px;
     border-radius: 2px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 }
 </style>
