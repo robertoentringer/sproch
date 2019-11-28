@@ -38,16 +38,7 @@ const router = new Router({
       name: "404",
       component: () => import(/* webpackChunkName: "not-found" */ "@/views/NotFound")
     }
-  ] /* ,
-  scrollBehavior(to, from, savedPosition) {
-    console.log(to)
-    return false
-    //console.log(to)
-    //return { selector: `#page-${to.query.page}` }
-    //if (savedPosition) return savedPosition
-    //if (to.hash) return { selector: to.hash }
-    //return { x: 0, y: 0 }
-  } */
+  ]
 })
 
 export default router
