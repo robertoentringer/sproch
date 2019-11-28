@@ -3,7 +3,7 @@
     <div class="block">
       <router-link
         v-if="expression.slug"
-        :to="{ name: 'expression', params: { slug: expression.slug } }"
+        :to="{ name: 'single', params: { slug: expression.slug } }"
       >
         <img
           v-if="expression.img"

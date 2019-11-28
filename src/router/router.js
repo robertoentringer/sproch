@@ -20,7 +20,7 @@ const router = new Router({
     },
     {
       path: "/expression/:slug",
-      name: "expression",
+      name: "single",
       component: () => import(/* webpackChunkName: "single" */ "@/views/Single")
     },
     {
