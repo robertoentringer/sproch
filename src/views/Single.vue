@@ -17,11 +17,12 @@ export default {
   },
   beforeRouteEnter(to, from, next) {
     const expression = Object.freeze(getExpressionBySlug(to.params.slug))
-    next(
-      expression
-        ? vm => (vm.expression = expression)
-        : { name: "404", params: [to.path], replace: true }
-    )
+    if (expression)
+      next(vm => {
+        vm.expression = expression
+        vm.$options.title = expression.title
+      })
+    else next({ name: "404", params: [to.path], replace: true })
   },
   data() {
     return {
