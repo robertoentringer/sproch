@@ -1,10 +1,27 @@
 <template>
   <nav id="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/About">About</router-link>
-    <router-link to="/Contact">Contact</router-link>
+    <router-link to="/">
+      <icon-base icon-name="Home page"><icon-home /></icon-base>
+    </router-link>
+    <router-link to="/About">
+      <icon-base icon-name="About us"><icon-about /></icon-base>
+    </router-link>
+    <router-link to="/Contact">
+      <icon-base icon-name="Contact us"><icon-contact /></icon-base>
+    </router-link>
   </nav>
 </template>
+
+<script>
+import IconBase from "@/components/icons/IconBase"
+import IconHome from "@/components/icons/IconHome"
+import IconAbout from "@/components/icons/IconAbout"
+import IconContact from "@/components/icons/IconContact"
+export default {
+  name: "Menu",
+  components: { IconBase, IconHome, IconAbout, IconContact }
+}
+</script>
 
 <style lang="scss">
 #nav {
@@ -12,7 +29,6 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
   margin: 0 auto;
   a {
     text-decoration: none;

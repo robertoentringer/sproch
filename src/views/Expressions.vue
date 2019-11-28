@@ -1,46 +1,68 @@
 <template>
   <section class="expressions">
-    <Expression v-for="item in expressions" :key="item.slug" :expression="item" />
-    <Observer v-if="observerVisible" @intersect="intersect" />
+    <Expression
+      v-for="(item, i) in expressions"
+      :key="i"
+      ref="items"
+      :data-slug="item.slug"
+      :expression="item"
+    />
   </section>
 </template>
 
 <script>
+import "intersection-observer"
 import Expression from "@/components/Expression"
-import Observer from "@/components/Observer"
 import expressions from "@/utils/getExpressions"
 
 export default {
   name: "Expressions",
-  components: {
-    Expression,
-    Observer
-  },
+  title: "Expressions",
+  description:
+    "De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche",
+  components: { Expression },
   data() {
     return {
-      data: [],
-      totalPages: 0,
       perPage: 10,
-      expressions: []
+      expressions: [],
+      page: this.$route.query.page || 1,
+      observer: null
     }
   },
   computed: {
+    total() {
+      return expressions.length
+    },
     loaded() {
       return this.expressions.length
-    },
-    observerVisible() {
-      return this.loaded < this.data.length
     }
   },
   created() {
-    this.data = expressions
-    this.expressions.push(...this.data.slice(0, this.$root.loaded || this.perPage))
-    this.totalPages = Math.ceil(this.data.length / this.perPage)
+    this.expressions.push(...expressions.slice(this.loaded, this.loaded + this.perPage * this.page))
+  },
+  mounted() {
+    this.observer = new IntersectionObserver(this.handleIntersect)
+    this.observeLast()
+  },
+  destroyed() {
+    this.observer.disconnect()
   },
   methods: {
-    intersect() {
-      const items = this.data.slice(this.loaded, this.loaded + this.perPage)
-      this.$root.loaded = this.expressions.push(...items)
+    observeLast() {
+      this.$nextTick(() => {
+        this.observer.observe(this.$refs.items[this.loaded - 1].$el)
+      })
+    },
+    handleIntersect(entries) {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (isIntersecting) {
+          this.observer.unobserve(target)
+          if (this.loaded < this.total) {
+            this.expressions.push(...expressions.slice(this.loaded, this.loaded + this.perPage))
+            this.observeLast()
+          } else this.observer.disconnect()
+        }
+      })
     }
   }
 }

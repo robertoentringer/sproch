@@ -328,8 +328,10 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Il faut souffrir pour être belle/beau (littéralement: la fièrté souffre la violence)",
-        describe: "Cette expression vous le confirme: la quête de la beauté vient à un certain prix."
+        title:
+          "Il faut souffrir pour être belle/beau (littéralement: la fièrté souffre la violence)",
+        describe:
+          "Cette expression vous le confirme: la quête de la beauté vient à un certain prix."
       },
       {
         lang: "de",
@@ -410,7 +412,8 @@ export default [
       {
         lang: "en",
         title: "Literally: When the mice have eaten well, the flour is bitter",
-        describe: "Used to indicate that a person fails to appreciate something because he or she lives in abundance."
+        describe:
+          "Used to indicate that a person fails to appreciate something because he or she lives in abundance."
       }
     ]
   },
@@ -477,12 +480,14 @@ export default [
       {
         lang: "de",
         title: "Schöne Feiertage!",
-        describe: "Die Redaktion des Portals Luxembourg.lu wünscht Ihnen schöne und besinnliche Feiertage!"
+        describe:
+          "Die Redaktion des Portals Luxembourg.lu wünscht Ihnen schöne und besinnliche Feiertage!"
       },
       {
         lang: "en",
         title: "Happy Holidays!",
-        describe: "The editorial team of the portal Luxembourg.lu wishes you a merry Christmas and happy holidays!"
+        describe:
+          "The editorial team of the portal Luxembourg.lu wishes you a merry Christmas and happy holidays!"
       }
     ]
   },
@@ -499,7 +504,8 @@ export default [
       },
       {
         lang: "de",
-        title: "Stutenkerl / Weckmann / (...) (bei unseren deutschen Nachbarn, aber auch in der Schweiz)",
+        title:
+          "Stutenkerl / Weckmann / (...) (bei unseren deutschen Nachbarn, aber auch in der Schweiz)",
         describe:
           "Der Boxemännchen ist unter vielen Namen im deutschen Sprachraum bekannt. In Luxemburg handelt es sich dabei um eine Brioche aus gesüßtem Hefeteig, die wie ein kleines Männchen geformt ist. Normalerweise wird der Boxemännchen in den Wochen vor Sankt Nikolaus (am 6. Dezember) verkauft und wird von Kindern heißgeliebt zum Frühstück oder am Nachmittag verspeist wird. Aber auch im Büro oder unter Freunden ist er ein gern gesehener Gast."
       },
@@ -543,13 +549,16 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Pourquoi tu fais une tête d'enterrement? (littéralement: Est-ce que t'es chargé de pluie?)",
-        describe: "Petite expression luxembourgeoise pour demander à une personne pourquoi elle semble triste."
+        title:
+          "Pourquoi tu fais une tête d'enterrement? (littéralement: Est-ce que t'es chargé de pluie?)",
+        describe:
+          "Petite expression luxembourgeoise pour demander à une personne pourquoi elle semble triste."
       },
       {
         lang: "de",
         title: "Was ist dir über die Leber gelaufen? (wörtlich: Hast du Regen geladen?)",
-        describe: "Luxemburgischer Ausdruck, um jemanden zu fragen, warum er ein trauriges Gesicht macht."
+        describe:
+          "Luxemburgischer Ausdruck, um jemanden zu fragen, warum er ein trauriges Gesicht macht."
       },
       {
         lang: "en",
@@ -592,7 +601,8 @@ export default [
         lang: "fr",
         title:
           "On ne change pas les personnes (littéralement: envoie un imbécile dans la forêt, tu auras une tête de noeud de retour)",
-        describe: "Expression pour marquer son désespoir qu'une personne n'a rien appris et répète ses fautes."
+        describe:
+          "Expression pour marquer son désespoir qu'une personne n'a rien appris et répète ses fautes."
       },
       {
         lang: "de",
@@ -603,8 +613,10 @@ export default [
       },
       {
         lang: "en",
-        title: "You can't change people (literally: send a dunce into the forest, he'll return a fool)",
-        describe: "Luxembourgish expression to show your despair at a person's inability to learn and avoid mistakes."
+        title:
+          "You can't change people (literally: send a dunce into the forest, he'll return a fool)",
+        describe:
+          "Luxembourgish expression to show your despair at a person's inability to learn and avoid mistakes."
       }
     ]
   },
@@ -689,19 +701,22 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Il faut tailler son manteau selon son drap (littéralement: Il faut danser avec les filles qui sont là)",
+        title:
+          "Il faut tailler son manteau selon son drap (littéralement: Il faut danser avec les filles qui sont là)",
         describe:
           'Jadis, quand les communautés rurales étaient plus isolées, le choix d\'un partenaire était souvent limité. Au bal du village, il fallait donc choisir parmi les filles qui étaient présentes. De nos jours, le premier sens de cette expression ne vaut plus, mais elle est quand-même utilisée dans la langue luxembourgeoise pour les situations où il faut faire "avec les moyens du bord".'
       },
       {
         lang: "de",
-        title: "Man muss sich nach der Decke strecken (wörtlich: Man muss mit den Mädchen tanzen die da sind)",
+        title:
+          "Man muss sich nach der Decke strecken (wörtlich: Man muss mit den Mädchen tanzen die da sind)",
         describe:
           "Als, vor langer Zeit, die ländlichen Gemeinschaften noch isolierter waren, war die Auswahl an potentiellen Partnern oft sehr begrenzt. Auf dem Dorfball musste man also mit den anwesenden Mädchen vorlieb nehmen. Auch wenn heute der eigentliche Sinn des Ausdrucks nicht mehr gilt, so hat er dennoch Eingang in die luxemburgische Sprache gefunden wenn Situationen auftreten, in denen einem die Optionen ausgehen."
       },
       {
         lang: "en",
-        title: "Cutting your coat to suit your cloth (literally: You have to dance with the girls who are there)",
+        title:
+          "Cutting your coat to suit your cloth (literally: You have to dance with the girls who are there)",
         describe:
           "A long time ago, when rural communities were more isolated, the choice of potential partners was often very limited. At the village dance, boys had to choose from among the girls who had come. Even though the expression has long lost its original meaning, it is still being used in the Luxembourgish language in situations when your options are very limited."
       }
@@ -764,7 +779,8 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Il n'a pas inventé la poudre (littéralement: il n'est pas le couteau le plus affilé dans le tiroir)",
+        title:
+          "Il n'a pas inventé la poudre (littéralement: il n'est pas le couteau le plus affilé dans le tiroir)",
         describe:
           'Le "Knäip" est un petit couteau avec une lame courte qui est utilisé pour beaucoup de tâches différentes dans la cuisine. '
       },
@@ -772,12 +788,15 @@ export default [
         lang: "de",
         title:
           "Er ist nicht der hellste Stern am Himmel (wörtlich: et ist nicht das schärfste Küchenmesser in der Schublade)",
-        describe: 'Ein "Knäip" ist ein kurzes Küchenmesser, was in sehr vielen Bereichen in der Küche Anwendung findet.'
+        describe:
+          'Ein "Knäip" ist ein kurzes Küchenmesser, was in sehr vielen Bereichen in der Küche Anwendung findet.'
       },
       {
         lang: "en",
-        title: "He isn't the sharpest tool in the shed (literally: he's not the sharpest kitchen knife in the drawer)",
-        describe: "The 'Knäip' is a short kitchen knife which finds use in many areas in the kitchen."
+        title:
+          "He isn't the sharpest tool in the shed (literally: he's not the sharpest kitchen knife in the drawer)",
+        describe:
+          "The 'Knäip' is a short kitchen knife which finds use in many areas in the kitchen."
       }
     ]
   },
@@ -814,17 +833,20 @@ export default [
       {
         lang: "fr",
         title: "Merlan cuit dans la levure de bière",
-        describe: "A part le Gromperekichelchen, une autre spécialité culinaire à savourer sur la Schueberfouer."
+        describe:
+          "A part le Gromperekichelchen, une autre spécialité culinaire à savourer sur la Schueberfouer."
       },
       {
         lang: "de",
         title: "In Bierhefe gekochter Wittling",
-        describe: "Neben dem Gromperekichelchen eine der Spezialitäten die man auf der Schueberfouer verköstigen kann."
+        describe:
+          "Neben dem Gromperekichelchen eine der Spezialitäten die man auf der Schueberfouer verköstigen kann."
       },
       {
         lang: "en",
         title: "Whiting cooked in bewers' yeast",
-        describe: "A part from the Gromperekichelchen another culinary specialty you can try at the Schueberfouer."
+        describe:
+          "A part from the Gromperekichelchen another culinary specialty you can try at the Schueberfouer."
       }
     ]
   },
@@ -835,17 +857,22 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "On lui présentera la facture (littéralement: Il saura le prix d'une livre de cerises)",
-        describe: "Expression pour dire que quelqu'un sera confronté, tôt ou tard, aux conséquences de ses actions."
+        title:
+          "On lui présentera la facture (littéralement: Il saura le prix d'une livre de cerises)",
+        describe:
+          "Expression pour dire que quelqu'un sera confronté, tôt ou tard, aux conséquences de ses actions."
       },
       {
         lang: "de",
-        title: "Er wird die Rechnung dafür bekommen (wörtlich: Dann wird er wissen wie viel ein Pfund Kirschen kostet)",
-        describe: "Ausdruck um zu sagen, dass jemand früher oder später die Konsequenzen seines Tuns tragen wird."
+        title:
+          "Er wird die Rechnung dafür bekommen (wörtlich: Dann wird er wissen wie viel ein Pfund Kirschen kostet)",
+        describe:
+          "Ausdruck um zu sagen, dass jemand früher oder später die Konsequenzen seines Tuns tragen wird."
       },
       {
         lang: "en",
-        title: "He'll be presented the bill (literally: He'll now how much a pound of cherries costs)",
+        title:
+          "He'll be presented the bill (literally: He'll now how much a pound of cherries costs)",
         describe:
           "Expression to say that someone is going to have to face the consequences of his actions sooner or later."
       }
@@ -906,7 +933,8 @@ export default [
       {
         lang: "fr",
         title: "Un cas désespéré (littéralement: Un oiseau pour le chat)",
-        describe: "Cette expression s'utilise généralement pour une personne qui est hermétique à tout conseil."
+        describe:
+          "Cette expression s'utilise généralement pour une personne qui est hermétique à tout conseil."
       },
       {
         lang: "de",
@@ -917,7 +945,8 @@ export default [
       {
         lang: "en",
         title: "A hopeless case (literally: a bird for the cat)",
-        describe: "Expression being normally used for someone who is impervious to any kind of advice."
+        describe:
+          "Expression being normally used for someone who is impervious to any kind of advice."
       }
     ]
   },
@@ -1053,12 +1082,14 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Ne pas être né(e) de la dernière pluie (littéralement: ne pas être cueilli d'une haie)",
+        title:
+          "Ne pas être né(e) de la dernière pluie (littéralement: ne pas être cueilli d'une haie)",
         describe: "Bonne réponse à une personne qui vous prend pour un imbécile."
       },
       {
         lang: "de",
-        title: "Sich nicht für dumm verkaufen lassen (Wörtlich: Nicht von der Hecke gepflückt sein)",
+        title:
+          "Sich nicht für dumm verkaufen lassen (Wörtlich: Nicht von der Hecke gepflückt sein)",
         describe: "Passende Antwort für jemanden, der einen für dumm verkaufen möchte."
       },
       {
@@ -1273,7 +1304,8 @@ export default [
       {
         lang: "fr",
         title: "Au revoir et merci!",
-        describe: "Une petite expression que vous trouverez sans doute utile dans votre vie quotidienne."
+        describe:
+          "Une petite expression que vous trouverez sans doute utile dans votre vie quotidienne."
       },
       {
         lang: "de",
@@ -1400,12 +1432,14 @@ export default [
       {
         lang: "de",
         title: "Das interessiert mich nicht im Geringsten",
-        describe: "Ein Ausdruck der benutzt wird um zu sagen, dass etwas keinen Impakt auf einen hat."
+        describe:
+          "Ein Ausdruck der benutzt wird um zu sagen, dass etwas keinen Impakt auf einen hat."
       },
       {
         lang: "en",
         title: "This does not bother me in the slightest",
-        describe: "Expression used to indicate that you are not impacted by something or simply do not care."
+        describe:
+          "Expression used to indicate that you are not impacted by something or simply do not care."
       }
     ]
   },
@@ -1417,17 +1451,20 @@ export default [
       {
         lang: "fr",
         title: "Je t'aime",
-        describe: "La meilleure façon d'avouer son amour - cette expression est à utiliser au quotidien."
+        describe:
+          "La meilleure façon d'avouer son amour - cette expression est à utiliser au quotidien."
       },
       {
         lang: "de",
         title: "Ich liebe dich",
-        describe: "Die schönste Art und Weise seine Liebe zu gestehen - dieser Ausdruck sollte täglich benutzt werden."
+        describe:
+          "Die schönste Art und Weise seine Liebe zu gestehen - dieser Ausdruck sollte täglich benutzt werden."
       },
       {
         lang: "en",
         title: "I love you",
-        describe: "The most beautiful way to confess your feelings - this expression should be used every day."
+        describe:
+          "The most beautiful way to confess your feelings - this expression should be used every day."
       }
     ]
   },
@@ -1500,7 +1537,8 @@ export default [
       },
       {
         lang: "en",
-        title: "To put your oar in / to put in your penny's worth (literally: to add your grain of pepper)",
+        title:
+          "To put your oar in / to put in your penny's worth (literally: to add your grain of pepper)",
         describe:
           "Oars, pennies or pepper? This expression is used in Luxembourgish to designate somebody's unsolicited participation in a discussion."
       }
@@ -1519,7 +1557,8 @@ export default [
       {
         lang: "de",
         title: "Meckern",
-        describe: "Verb welches benutzt wird wenn jemand seinen Dissens zum Ausdruck bringen möchte."
+        describe:
+          "Verb welches benutzt wird wenn jemand seinen Dissens zum Ausdruck bringen möchte."
       },
       {
         lang: "en",
@@ -1685,7 +1724,8 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "C'est incroyable! (littéralement: cela ne trouve pas de place sur une peau de vache)",
+        title:
+          "C'est incroyable! (littéralement: cela ne trouve pas de place sur une peau de vache)",
         describe:
           "Au Moyen-Âge, les peaux des vaches étaient utilisées dans la production de parchemin. Selon la mythologie chrétienne, le diable lui-même en utilisait pour noter tous les péchés et toutes les fautes des mortels, pour leur présenter la liste lors de leur décès. Cependant, si le nombre de péchés dépassait l'espace disponible sur la peau de vache, même le diable ne trouvait plus de place pour en noter, d'où cette expression."
       },
@@ -1710,18 +1750,22 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Avoir des intentions malhonnêtes (Littéralement: on reconnaît le vaurien dans ton visage)",
+        title:
+          "Avoir des intentions malhonnêtes (Littéralement: on reconnaît le vaurien dans ton visage)",
         describe:
           "Expression utilisée en plaisantant pour identifier quelqu'un qui a clairement des intentions de créer la zizanie."
       },
       {
         lang: "de",
-        title: "Offensichtlich etwas im Schilde führen (Wörtlich: du hast den Nichtsnutz ins Gesicht geschrieben)",
-        describe: "Ausdruck der scherzhaft benutzt wird wenn jemand offensichtlich etwas im Schilde führt."
+        title:
+          "Offensichtlich etwas im Schilde führen (Wörtlich: du hast den Nichtsnutz ins Gesicht geschrieben)",
+        describe:
+          "Ausdruck der scherzhaft benutzt wird wenn jemand offensichtlich etwas im Schilde führt."
       },
       {
         lang: "en",
-        title: "Clearly having a mischievous intent (literally: the ne'er-do-well is visible in your face)",
+        title:
+          "Clearly having a mischievous intent (literally: the ne'er-do-well is visible in your face)",
         describe: "Term jokingly used to refer to a person who clearly is up to no good."
       }
     ]
@@ -1746,7 +1790,8 @@ export default [
       },
       {
         lang: "en",
-        title: "You can't make an omelette without breaking eggs (literally: when slicing, chips will fall off)",
+        title:
+          "You can't make an omelette without breaking eggs (literally: when slicing, chips will fall off)",
         describe:
           "Nothing is for free and sometimes, in order to achieve something, you'll have to take some disadvantages into account. Mind you, a good carpenter even manages to recycle woodchips into something useful."
       }
@@ -1784,13 +1829,15 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Ça vient comme un cheveu sur la soupe (littéralement: ça correspond comme une selle sur une vache)",
+        title:
+          "Ça vient comme un cheveu sur la soupe (littéralement: ça correspond comme une selle sur une vache)",
         describe:
           "Parfois, il y a des situations qui ne vous vont pas du tout. Pour les luxembourgeois, c'est alors comme si on essayerait de chevaucher une vache."
       },
       {
         lang: "de",
-        title: "Das passt wie die Faust aufs Auge (wörtlich: das passt wie der Sattel auf eine Kuh)",
+        title:
+          "Das passt wie die Faust aufs Auge (wörtlich: das passt wie der Sattel auf eine Kuh)",
         describe:
           "Manchmal findet man sich in Situationen wieder, die einem gar nicht passen. Für Luxemburger ist das dann, als ob man versuchen würde, auf einer Kuh zu reiten."
       },
@@ -1816,12 +1863,15 @@ export default [
       {
         lang: "de",
         title: "Nicht mehr grün hinter den Ohren sein (wörtlich: drei Mal sieben Jahre alt sein)",
-        describe: "Lassen Sie sich nicht für dumm verkaufen, besonders wenn Sie bereits drei Mal sieben Jahre alt sind!"
+        describe:
+          "Lassen Sie sich nicht für dumm verkaufen, besonders wenn Sie bereits drei Mal sieben Jahre alt sind!"
       },
       {
         lang: "en",
-        title: "To not be green behind the ears anymore (literally: to be three times seven years of age)",
-        describe: "Don't let yourself be taken for a ride, especially when you are already three times seven years old!"
+        title:
+          "To not be green behind the ears anymore (literally: to be three times seven years of age)",
+        describe:
+          "Don't let yourself be taken for a ride, especially when you are already three times seven years old!"
       }
     ]
   },
@@ -1890,12 +1940,14 @@ export default [
       {
         lang: "de",
         title: "Wörtlich: Wenn die Mäuse satt sind, ist das Mehl bitter",
-        describe: "Manchmal trifft jemanden der se im Überfluss lebt, dass er das verschmäht was er sonst liebte."
+        describe:
+          "Manchmal trifft jemanden der se im Überfluss lebt, dass er das verschmäht was er sonst liebte."
       },
       {
         lang: "en",
         title: "Literally: When the mice have had their fill, the flour is bitter",
-        describe: "Occasionally you'll meet someone who lives in such exuberance that they spurn what they once loved."
+        describe:
+          "Occasionally you'll meet someone who lives in such exuberance that they spurn what they once loved."
       }
     ]
   },
@@ -1931,13 +1983,15 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Faire un appel du pied à quelqu'un (littéralement: faire signe avec la porte de grange)",
+        title:
+          "Faire un appel du pied à quelqu'un (littéralement: faire signe avec la porte de grange)",
         describe: "Faire une allusion tellement explicite que l'autre ne puisse pas l'ignorer."
       },
       {
         lang: "de",
         title: "Mit dem Zaunpfahl winken (wörtlich: Mit der Scheunenpforte winken)",
-        describe: "Jemandem eine Andeutung machen, die so offensichtlich ist, dass sie nicht zu übersehen ist."
+        describe:
+          "Jemandem eine Andeutung machen, die so offensichtlich ist, dass sie nicht zu übersehen ist."
       },
       {
         lang: "en",
@@ -2102,17 +2156,20 @@ export default [
       {
         lang: "fr",
         title: "Anniversaire de S.A.R. le Grand-Duc",
-        describe: "Chaque année, le 23 juin, l'anniversaire de S.A.R. le Grand-Duc est célébrée au Luxembourg."
+        describe:
+          "Chaque année, le 23 juin, l'anniversaire de S.A.R. le Grand-Duc est célébrée au Luxembourg."
       },
       {
         lang: "de",
         title: "Geburtstag S. K. H. des Großherzogs",
-        describe: "Jedes Jahr am 23. Juni wird in Luxemburg der Geburtstag S. K. H. des Großherzogs gefeiert."
+        describe:
+          "Jedes Jahr am 23. Juni wird in Luxemburg der Geburtstag S. K. H. des Großherzogs gefeiert."
       },
       {
         lang: "en",
         title: "Birthday of HRH the Grand Duke",
-        describe: "Every year on 23 June, HRH the Grand Duke's birthday is celebrated is Luxembourg."
+        describe:
+          "Every year on 23 June, HRH the Grand Duke's birthday is celebrated is Luxembourg."
       }
     ]
   },
@@ -2246,8 +2303,10 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Ne te laisse pas rouler dans la farine. (Littéralement: Un bon âne ne se heurte qu'une fois)",
-        describe: "La mémoire sert à pleins de choses, entre autres à ne pas se laisser avoir une deuxième fois. "
+        title:
+          "Ne te laisse pas rouler dans la farine. (Littéralement: Un bon âne ne se heurte qu'une fois)",
+        describe:
+          "La mémoire sert à pleins de choses, entre autres à ne pas se laisser avoir une deuxième fois. "
       },
       {
         lang: "de",
@@ -2260,7 +2319,8 @@ export default [
         lang: "en",
         title:
           "Fool me once, shame on you. Fool me twice, shame on me (Literally: A good donkey only bumps into something once)",
-        describe: "Memory is a useful tool, especially when trying to avoid making the same mistake twice."
+        describe:
+          "Memory is a useful tool, especially when trying to avoid making the same mistake twice."
       }
     ]
   },
@@ -2296,7 +2356,8 @@ export default [
       {
         lang: "fr",
         title: "Plus bas que terre (littéralement: en-dessous de tout canon)",
-        describe: 'On vous a exploité, joué un tour ou dupé? Alors c\'est proverbialement "ënnert aller Kanoun".'
+        describe:
+          'On vous a exploité, joué un tour ou dupé? Alors c\'est proverbialement "ënnert aller Kanoun".'
       },
       {
         lang: "de",
@@ -2307,7 +2368,8 @@ export default [
       {
         lang: "en",
         title: "This is beneath contempt! (Literally: Under all canon!)",
-        describe: "You've been exploitet, outsmarted or deceived? That's proverbially speaking 'ënnert aller Kanoun'."
+        describe:
+          "You've been exploitet, outsmarted or deceived? That's proverbially speaking 'ënnert aller Kanoun'."
       }
     ]
   },
@@ -2432,7 +2494,8 @@ export default [
       },
       {
         lang: "en",
-        title: "Like chalk and cheese / To be a perfect match (literally: Fitting like a fist to the eye)",
+        title:
+          "Like chalk and cheese / To be a perfect match (literally: Fitting like a fist to the eye)",
         describe:
           "Don't worry if you are slightly bewildered that one and the same expression can be used in two completely opposite ways. Even though the expression has German origins, it is much used in Luxembourgish too. Originally it was probably an ironic way of saying that two things are completely different (like chalk and cheese), but over time this irony became its secondary and honest connotation: that two things fit perfectly together."
       }
@@ -2495,7 +2558,8 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Tous les chemins mènent à Rome (littéralement: conduire à l'envers, c'est tout de même conduire)",
+        title:
+          "Tous les chemins mènent à Rome (littéralement: conduire à l'envers, c'est tout de même conduire)",
         describe:
           "Tous les chemins mènent à Rome, c'est ce qu'on dit. Cette expression en est la version luxembourgeoise, utilisée pour dire qu'une alternative proposée peut être toute aussi valable que l'option retenue à l'origine."
       },
@@ -2951,7 +3015,8 @@ export default [
       {
         lang: "de",
         title: "Jetzt reichts aber! (Wörtlich: Jetzt ist das Zicklein aber fett!)",
-        describe: "Ausdruck der benutzt wird, um klarzstellen, dass man eine Situation nicht weiter akzeptiert."
+        describe:
+          "Ausdruck der benutzt wird, um klarzstellen, dass man eine Situation nicht weiter akzeptiert."
       },
       {
         lang: "en",
@@ -2968,17 +3033,20 @@ export default [
       {
         lang: "fr",
         title: "Anniversaire de S.A.R. le Grand-Duc",
-        describe: "Chaque année au 23 juin, l'anniversaire de S.A.R. le Grand-Duc est fêtée au Luxembourg."
+        describe:
+          "Chaque année au 23 juin, l'anniversaire de S.A.R. le Grand-Duc est fêtée au Luxembourg."
       },
       {
         lang: "de",
         title: "Geburtstag S. K. H. des Großherzogs",
-        describe: "Jedes Jahr am 23. Juni wird in Luxemburg der Geburtstag S. K. H. des Großherzogs gefeiert."
+        describe:
+          "Jedes Jahr am 23. Juni wird in Luxemburg der Geburtstag S. K. H. des Großherzogs gefeiert."
       },
       {
         lang: "en",
         title: "Birthday of HRH the Grand Duke",
-        describe: "Every year on 23 June, HRH the Grand Duke's birthday is celebrated is Luxembourg."
+        describe:
+          "Every year on 23 June, HRH the Grand Duke's birthday is celebrated is Luxembourg."
       }
     ]
   },
@@ -2990,7 +3058,8 @@ export default [
     i18n: [
       {
         lang: "fr",
-        title: "Maman, voilà ton enfant icivenu pour te dire merci.Je te dis en toute douceurque, maman, je t'adore! ",
+        title:
+          "Maman, voilà ton enfant icivenu pour te dire merci.Je te dis en toute douceurque, maman, je t'adore! ",
         describe: 'Trouvez une nouvelle expression chaque semaine sur "De Sproch vun der Woch"!'
       },
       {
@@ -3046,7 +3115,8 @@ export default [
       {
         lang: "de",
         title: "Wörtlich: Ein Apfel für den Durst",
-        describe: "Dieser luxemburgische Ausdruck bedeutet eine Reserve für Durststrecken, d.h. schwierige Zeiten."
+        describe:
+          "Dieser luxemburgische Ausdruck bedeutet eine Reserve für Durststrecken, d.h. schwierige Zeiten."
       },
       {
         lang: "en",
@@ -3264,7 +3334,8 @@ export default [
       {
         lang: "fr",
         title: "Littéralement: Nous allons partir en charrette chez-nous",
-        describe: "L’opposé d’un mode de transport. Indique qu’on ne part pas en vacances, qu’on reste chez soi."
+        describe:
+          "L’opposé d’un mode de transport. Indique qu’on ne part pas en vacances, qu’on reste chez soi."
       },
       {
         lang: "de",
@@ -3333,7 +3404,8 @@ export default [
   {
     audio: "24-mammendag3.mp3",
     img: "24-mammendag-mdpi.jpg",
-    title: "Mama kuck däi Kand hei ston, Wel et wëll dir Merci son. A ganz luez son ech dir: Mama ech si frou mat dir!",
+    title:
+      "Mama kuck däi Kand hei ston, Wel et wëll dir Merci son. A ganz luez son ech dir: Mama ech si frou mat dir!",
     i18n: [
       {
         lang: "fr",

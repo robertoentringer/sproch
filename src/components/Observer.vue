@@ -9,7 +9,9 @@ export default {
   abstract: true,
   data: () => ({ observer: null }),
   mounted() {
-    this.observer = new IntersectionObserver(([entry]) => entry.isIntersecting && this.$emit("intersect"))
+    this.observer = new IntersectionObserver(
+      ([entry]) => entry.isIntersecting && this.$emit("intersect")
+    )
     this.observer.observe(this.$el)
   },
   destroyed() {

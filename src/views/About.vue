@@ -8,7 +8,7 @@
       Les expressions reproduites sur ce site ont étés origilamente publiés sur le
       <a
         title="Portail officiel du Grand-Duché de Luxembourg"
-        href="http://luxembourg.public.lu"
+        href="http://luxembourg.lu"
         target="_blank"
         rel="noopener noreferrer"
         >portail officiel du Grand-Duché de Luxembourg</a
@@ -18,7 +18,7 @@
     <p>
       <a
         title="Portail officiel du Grand-Duché de Luxembourg"
-        href="http://luxembourg.public.lu"
+        href="http://luxembourg.lu"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -30,7 +30,9 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
+  title: "About Page",
+  description: "Description About Page..."
 }
 </script>
 
@@ -49,6 +51,9 @@ export default {
     margin-top: 1rem;
     padding: 10px;
     border-radius: 2px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 }
 </style>

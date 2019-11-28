@@ -6,16 +6,23 @@
 
 <script>
 import Expression from "@/components/Expression"
-import expressions from "@/utils/getExpressions"
+import { getExpressionBySlug } from "@/utils/getExpressions"
 
 export default {
   name: "Single",
+  title: "Single Expression Page",
+  description: "Description Single Expression Page...",
   components: {
     Expression
   },
   beforeRouteEnter(to, from, next) {
-    const expression = expressions.find(item => item.slug == to.params.slug)
-    next(expression ? vm => (vm.expression = expression) : { name: "404", params: [to.path], replace: true })
+    const expression = Object.freeze(getExpressionBySlug(to.params.slug))
+    if (expression)
+      next(vm => {
+        vm.expression = expression
+        vm.$options.title = expression.title
+      })
+    else next({ name: "404", params: [to.path], replace: true })
   },
   data() {
     return {
