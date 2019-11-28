@@ -38,7 +38,10 @@ const router = new Router({
       name: "404",
       component: () => import(/* webpackChunkName: "not-found" */ "@/views/NotFound")
     }
-  ]
+  ],
+  scrollBehavior() {
+    return new Promise(resolve => setTimeout(() => resolve({ x: 0, y: 0 }), 400))
+  }
 })
 
 export default router

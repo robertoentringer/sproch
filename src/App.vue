@@ -43,7 +43,7 @@ export default {
 }
 .fade-down-enter-active {
   animation-name: fadeInDown;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
 }
 .fade-down-leave-active {
   animation-name: fadeOutDown;
@@ -51,8 +51,8 @@ export default {
 }
 @keyframes fadeInDown {
   from {
-    opacity: 0.05;
-    transform: translate3d(0, -25px, 0);
+    opacity: 0.04;
+    transform: translate3d(0, 25px, 0);
   }
   to {
     opacity: 1;
@@ -65,8 +65,8 @@ export default {
     transform: none;
   }
   to {
-    opacity: 0.05;
-    transform: translate3d(0, -25px, 0);
+    opacity: 0.04;
+    transform: translate3d(0, 25px, 0);
   }
 }
 </style>
