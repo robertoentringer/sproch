@@ -1,17 +1,40 @@
 <template>
   <article class="expression">
-    <!--<divclass="block">
-      <router-link v-if="expression.slug" :to="{ name: 'expression', params: { slug: expression.slug } }">
-        <img v-if="expression.img" width="320" height="240" loading="eager" :alt="expression.img" :src="img" />
+    <div class="block">
+      <router-link
+        v-if="expression.slug"
+        :to="{ name: 'expression', params: { slug: expression.slug } }"
+      >
+        <img
+          v-if="expression.img"
+          width="320"
+          height="240"
+          loading="eager"
+          :alt="expression.img"
+          :src="img"
+        />
       </router-link>
       <audio v-if="expression.audio" preload="none" controls :src="audio" />
-    </div>-->
+      <p class="source">
+        Source: Service information et presse du gouvernement /
+        <a
+          title="Service information et presse du gouvernement"
+          href="http://luxembourg.lu"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Luxembourg.lu</a
+        >
+      </p>
+    </div>
     <div class="block">
       <h1 class="title">{{ expression.title }}</h1>
-      <!--<div v-for="traduction in expression.i18n" :key="traduction.lang">
-        <h3 class="title">{{ traduction.lang.toUpperCase() }} - {{ traduction.title }}</h3>
+      <div v-for="traduction in expression.i18n" :key="traduction.lang">
+        <h3 class="title">
+          <span class="lang">{{ traduction.lang.toUpperCase() }}</span>
+          <span class="text">{{ traduction.title }}</span>
+        </h3>
         <p>{{ traduction.describe }}</p>
-      </div>-->
+      </div>
     </div>
   </article>
 </template>
@@ -40,6 +63,24 @@ export default {
 .expression {
   display: flex;
   margin: 5vw 0;
+  .source {
+    font-style: italic;
+    font-size: 0.75em;
+    margin-bottom: 0;
+    a {
+      color: inherit;
+    }
+  }
+  .title {
+    overflow-wrap: break-word;
+    hyphens: auto;
+    .lang {
+      background: #fff;
+      padding: 0 0.4em;
+      font-size: 0.85em;
+      margin-right: 0.4em;
+    }
+  }
   .block {
     flex: 1;
     & a + audio {
