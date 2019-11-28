@@ -19,8 +19,9 @@ const expressions = getExpressionsFirsts(20)
 
 export default {
   name: "Expressions",
-  title: "Expressions Page",
-  description: "Description Expressions Page...",
+  title: "Expressions",
+  description:
+    "De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche",
   components: { Expression },
   data() {
     return {
