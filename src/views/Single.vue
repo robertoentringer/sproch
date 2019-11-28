@@ -10,24 +10,23 @@ import { getExpressionBySlug } from "@/utils/getExpressions"
 
 export default {
   name: "Single",
-  title: "Single Expression Page",
-  description: "Description Single Expression Page...",
   components: {
     Expression
-  },
-  beforeRouteEnter(to, from, next) {
-    const expression = Object.freeze(getExpressionBySlug(to.params.slug))
-    if (expression)
-      next(vm => {
-        vm.expression = expression
-        vm.$options.title = expression.title
-      })
-    else next({ name: "404", params: [to.path], replace: true })
   },
   data() {
     return {
       expression: {}
     }
+  },
+  mounted() {
+    this.expression = Object.freeze(getExpressionBySlug(this.$route.params.slug))
+    this.$options.title = this.expression.title
+    this.$options.description = this.expression.i18n[0].describe
+  },
+  beforeRouteEnter(to, from, next) {
+    const expression = getExpressionBySlug(to.params.slug)
+    if (expression) next()
+    else next({ name: "404", params: [to.path], replace: true })
   }
 }
 </script>
