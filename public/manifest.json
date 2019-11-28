@@ -1,6 +1,6 @@
 {
-  "name": "sproch-vue-cli",
-  "short_name": "sproch-vue-cli",
+  "name": "sproch",
+  "short_name": "sproch",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
