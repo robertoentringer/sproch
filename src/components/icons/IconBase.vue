@@ -10,11 +10,11 @@ export default {
   props: {
     iconName: {
       type: String,
-      default: "icon"
+      default: 'icon'
     },
     iconColor: {
       type: String,
-      default: "currentColor"
+      default: 'currentColor'
     }
   }
 }

@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: "Expression",
+  name: 'Expression',
   props: {
     expression: {
       type: Object,

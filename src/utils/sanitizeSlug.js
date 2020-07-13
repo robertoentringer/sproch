@@ -1,11 +1,11 @@
-export default (string = "") =>
+export default (string = '') =>
   string
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[-_,/;'":!?()]+/g, " ")
-    .split(" ")
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[-_,/;'":!?()]+/g, ' ')
+    .split(' ')
     .splice(0, 10)
-    .join(" ")
+    .join(' ')
     .trim()
-    .replace(/\s+/g, "-")
+    .replace(/\s+/g, '-')
     .toLowerCase()

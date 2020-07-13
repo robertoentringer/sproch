@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import IconBase from "@/components/icons/IconBase"
-import IconHome from "@/components/icons/IconHome"
-import IconAbout from "@/components/icons/IconAbout"
-import IconContact from "@/components/icons/IconContact"
+import IconBase from '@/components/icons/IconBase'
+import IconHome from '@/components/icons/IconHome'
+import IconAbout from '@/components/icons/IconAbout'
+import IconContact from '@/components/icons/IconContact'
 export default {
-  name: "Menu",
+  name: 'Menu',
   components: { IconBase, IconHome, IconAbout, IconContact }
 }
 </script>

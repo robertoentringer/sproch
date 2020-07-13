@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import "intersection-observer"
-import Expression from "@/components/Expression"
-import expressions from "@/utils/getExpressions"
+import 'intersection-observer'
+import Expression from '@/components/Expression'
+import expressions from '@/utils/getExpressions'
 
 export default {
-  name: "Expressions",
-  title: "Expressions",
+  name: 'Expressions',
+  title: 'Expressions',
   description:
-    "De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche",
+    'De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche',
   components: { Expression },
   data() {
     return {

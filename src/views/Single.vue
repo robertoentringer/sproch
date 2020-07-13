@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import Expression from "@/components/Expression"
-import { getExpressionBySlug } from "@/utils/getExpressions"
+import Expression from '@/components/Expression'
+import { getExpressionBySlug } from '@/utils/getExpressions'
 
 export default {
-  name: "Single",
+  name: 'Single',
   components: {
     Expression
   },
@@ -26,7 +26,7 @@ export default {
   beforeRouteEnter(to, from, next) {
     const expression = getExpressionBySlug(to.params.slug)
     if (expression) next()
-    else next({ name: "404", params: [to.path], replace: true })
+    else next({ name: '404', params: [to.path], replace: true })
   }
 }
 </script>
