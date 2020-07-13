@@ -30,8 +30,13 @@ export default {
 
 <style lang="scss">
 #app {
+  background: $bg-dark;
+  height: 100vh;
   overflow-x: hidden;
-  position: relative;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   main {
     padding: 0 5vw;
     section {
