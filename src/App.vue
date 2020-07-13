@@ -31,8 +31,9 @@ export default {
 <style lang="scss">
 #app {
   background: $bg-dark;
+  -webkit-overflow-scrolling: touch;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
   overflow-y: auto;
   position: absolute;
   top: 0;
