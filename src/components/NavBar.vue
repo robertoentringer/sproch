@@ -25,11 +25,9 @@ export default {
 
 <style lang="scss">
 #nav {
-  padding: 2rem 1rem 2.5rem;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   a {
     text-decoration: none;
     font-weight: 700;

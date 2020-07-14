@@ -30,19 +30,30 @@ export default {
 
 <style lang="scss">
 #app {
-  background: $bg-dark;
-  -webkit-overflow-scrolling: touch;
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  #nav,
   main {
-    padding: 0 5vw;
+    padding: $spaces;
+    &#nav {
+      padding-bottom: 0;
+    }
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     section {
       & > :first-of-type {
         margin-top: 0;
+      }
+      & > :last-child {
+        margin-bottom: 0;
       }
     }
   }

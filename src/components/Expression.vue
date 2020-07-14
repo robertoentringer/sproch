@@ -62,7 +62,12 @@ export default {
 <style lang="scss" scoped>
 .expression {
   display: flex;
-  margin: 5vw 0;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  &:not(:last-child) {
+    margin-bottom: $spaces;
+  }
   .source {
     font-style: italic;
     font-size: 0.75em;
@@ -107,9 +112,6 @@ export default {
       display: flex;
       flex-direction: column;
     }
-  }
-  &:nth-child(even) {
-    flex-direction: row-reverse;
   }
 }
 @media only screen and (max-width: 768px) {

@@ -6,9 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "vercel-prod": "vercel --prod",
-    "vercel-dev": "vercel dev",
-    "vercel-stating": "vercel"
+    "vercel:prod": "vercel --prod",
+    "vercel:dev": "vercel dev",
+    "vercel:stating": "vercel"
   },
   "dependencies": {
     "core-js": "^3.6.5",

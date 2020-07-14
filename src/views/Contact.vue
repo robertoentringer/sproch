@@ -1,9 +1,11 @@
 <template>
   <section class="contact">
     <h1>Contact</h1>
-    <h3>r.entringer@gmail.com</h3>
-    <p>
-      🛠 with Vue.js ❤️. By
+    <h2>
+      <a href="mailto:r.entringer@gmail.com">r.entringer@gmail.com</a>
+    </h2>
+    <h3>
+      🛠 with Vue.js ❤️ <br />By
       <a
         title="Roberto Entringer"
         href="http://robertoentringer.com"
@@ -11,7 +13,7 @@
         rel="noopener noreferrer"
         >Roberto Entringer</a
       >
-    </p>
+    </h3>
   </section>
 </template>
 
