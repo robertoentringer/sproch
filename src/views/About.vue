@@ -32,7 +32,7 @@
 export default {
   name: 'About',
   title: 'About Page',
-  description: 'Description About Page...'
+  description: 'De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche.'
 }
 </script>
 
