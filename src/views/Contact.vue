@@ -21,6 +21,7 @@
 export default {
   name: 'Contact',
   title: 'Contact Page',
-  description: 'De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche.'
+  description:
+    'De Sproch vun der Woch. Le proverbe de la semaine. The weekly expression. Der Spruch der Woche.'
 }
 </script>

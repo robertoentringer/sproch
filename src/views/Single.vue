@@ -13,6 +13,11 @@ export default {
   components: {
     Expression
   },
+  beforeRouteEnter(to, from, next) {
+    const expression = getExpressionBySlug(to.params.slug)
+    if (expression) next()
+    else next({ name: '404', params: [to.path], replace: true })
+  },
   data() {
     return {
       expression: {}
@@ -22,11 +27,6 @@ export default {
     this.expression = Object.freeze(getExpressionBySlug(this.$route.params.slug))
     this.$options.title = this.expression.title
     this.$options.description = this.expression.i18n[0].describe
-  },
-  beforeRouteEnter(to, from, next) {
-    const expression = getExpressionBySlug(to.params.slug)
-    if (expression) next()
-    else next({ name: '404', params: [to.path], replace: true })
   }
 }
 </script>
